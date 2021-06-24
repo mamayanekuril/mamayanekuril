@@ -1,0 +1,1 @@
+# mamayanekuril.github.io
