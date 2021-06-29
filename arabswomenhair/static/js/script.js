@@ -33,6 +33,7 @@ function order() {
     let sale = 0
     let shiping = 0
     let total = 0
+    let retailText = ''
 
     const item1 = document.querySelector('.item1')
     const item2 = document.querySelector('.item2')
@@ -53,6 +54,7 @@ function order() {
             price = Number(this.dataset.price)
             sale = Number(this.dataset.sale)
             
+            retailText = this.dataset.retail
             let event = new Event("change");
             select.dispatchEvent(event);
 
@@ -64,7 +66,7 @@ function order() {
     function output() {
         sp.textContent = `$${shiping}`
         save.textContent = `You Save $${sale}`
-        retail.textContent = `Retail: $${price}`
+        retail.textContent = `Retail: ${retailText}`
 
         yt.textContent = `$${(price + shiping).toFixed(2)}`
     }
