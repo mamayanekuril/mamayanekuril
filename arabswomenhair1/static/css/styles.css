@@ -4059,6 +4059,7 @@ header {
     margin-bottom: -1.07vw;
     text-align: right;
     padding-right: 2.13vw;
+    letter-spacing: 0.01em;
   }
 
   .intro-content__title-1 {
@@ -4066,6 +4067,7 @@ header {
     margin-bottom: -9px;
     text-align: right;
     padding-right: 8px;
+    letter-spacing: 0.01em;
   }
 
   .intro-content__title-2 {
@@ -4074,6 +4076,7 @@ header {
     margin-bottom: 1.07vw;
     padding-right: 3.2vw;
     text-align: right;
+    letter-spacing: 0.01em;
   }
 
   .intro-content__txt {
