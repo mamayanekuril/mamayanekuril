@@ -1674,7 +1674,7 @@ a[class] {
   bottom: 0;
   top: 0;
   z-index: -1;
-  right: 7.81vw;
+  right: 3.81vw;
   
 }
 
@@ -1804,7 +1804,7 @@ a[class] {
   text-transform: uppercase;
   color: #3671b8;
   text-align: center;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.3em;
 }
 
 .intro-content__title-1,
@@ -1820,6 +1820,7 @@ a[class] {
   margin-bottom: -2.55vw;
   text-transform: uppercase;
   color: #ec000d;
+  letter-spacing: 0.2em;
 }
 
 .intro-content__title-2 {
@@ -1828,6 +1829,7 @@ a[class] {
   text-shadow: 0 0 7.5px #0085ff;
   font-size: 6.51vw;
   margin-bottom: -0.94vw;
+  letter-spacing: 0.4em;
 }
 
 .intro-content__foot-title,
