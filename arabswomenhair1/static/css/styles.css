@@ -1653,14 +1653,14 @@ a[class] {
 }
 
 .fight__container {
-  padding-left: 10.47vw;
+  padding-left: 15.47vw;
   position: relative;
   padding-bottom: 4.06vw;
 }
 
 .fight-content__rx {
   position: absolute;
-  left: 3.04vw;
+  left: 7.04vw;
   top: 26.27vw;
   width: 24.71vw;
 }
@@ -1674,7 +1674,7 @@ a[class] {
   bottom: 0;
   top: 0;
   z-index: -1;
-  right: 5.81vw;
+  right: 7.81vw;
   
 }
 
@@ -2392,7 +2392,7 @@ a[class] {
 
 .order-item__price {
   font-family: Oswald;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 40px;
   line-height: 59px;
   color: #000;
@@ -2403,6 +2403,7 @@ a[class] {
   font-family: Roboto;
   font-size: 16px;
   line-height: 19px;
+  font-weight: 500;
 }
 
 .order-item__btn {
@@ -2511,7 +2512,7 @@ a[class] {
 .order-head__img {
   position: absolute;
   top: 0;
-  left: 140px;
+  left: 70px;
   bottom: 0;
 }
 
@@ -3112,6 +3113,7 @@ header {
 @media (max-width: 567px) {
   .works-content__title span {
     width: 380px;
+    text-align: center;
   }
 
   .recomend__link,
@@ -3473,8 +3475,12 @@ header {
     font-size: 8.53vw;
     color: #00006e;
     margin-bottom: 5.6vw;
-    padding-left: 8vw;
+    padding-left: 0;
     font-family: Roboto Condensed;
+    text-align: center;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
   }
 
