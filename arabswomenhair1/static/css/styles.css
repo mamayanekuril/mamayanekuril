@@ -1798,13 +1798,13 @@ a[class] {
 
 .intro-content__suptitle {
   font-style: italic;
-  font-size: 3.08vw;
+  font-size: 3.88vw;
   margin-bottom: -0.68vw;
   line-height: 127.6%;
   text-transform: uppercase;
   color: #3671b8;
   text-align: center;
-  letter-spacing: 0.3em;
+  
 }
 
 .intro-content__title-1,
@@ -1816,20 +1816,20 @@ a[class] {
 }
 
 .intro-content__title-1 {
-  font-size: 6.21vw;
+  font-size: 7.21vw;
   margin-bottom: -2.55vw;
   text-transform: uppercase;
   color: #ec000d;
-  letter-spacing: 0.2em;
+ 
 }
 
 .intro-content__title-2 {
   text-transform: uppercase;
   color: #fff910;
   text-shadow: 0 0 7.5px #0085ff;
-  font-size: 6.51vw;
+  font-size: 10.51vw;
   margin-bottom: -0.94vw;
-  letter-spacing: 0.4em;
+  
 }
 
 .intro-content__foot-title,
@@ -4583,7 +4583,7 @@ header {
   }
 
   .order-form__title {
-    font-size: 54px;
+    font-size: 42px;
   }
 }
 
