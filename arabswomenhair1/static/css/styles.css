@@ -4225,7 +4225,7 @@ header {
   }
 
   .order-head__info {
-    padding-left: 140px;
+    padding-left: 160px;
   }
 
   .order-head {
@@ -4448,7 +4448,7 @@ header {
   }
 
   .order-form__title {
-    font-size: 60px;
+    font-size: 42px;
     line-height: 60%;
     margin-bottom: 6px;
   }
