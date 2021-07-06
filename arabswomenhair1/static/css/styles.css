@@ -1401,8 +1401,8 @@ a[class] {
 }
 
 .effective {
-  padding-top: 7.71vw;
-  padding-bottom: 2.19vw;
+  padding-top: 3vw;
+  padding-bottom: 3vw;
   position: relative;
   background-color: rgb(203, 242, 255);
   margin-left: auto;
@@ -1435,12 +1435,18 @@ a[class] {
   max-width: 40%;
 }
 
+@media (min-width: 568px) {
+  .effective-content__img img {
+    transform: scale(-1, 1);
+  }
+}
+
 /* .effective-content__title span {
   width: 600px;
 } */
 
 .effective-content__title span:not([class]) {
-  color: #651695;
+  color: #e80a03;
 }
 
 .effective-content__txt {
@@ -1448,7 +1454,7 @@ a[class] {
   font-size: 1.82vw;
   line-height: 127.6%;
   color: #5cc910;
-  margin-bottom: 4.84vw;
+  margin-bottom: 2.84vw;
   position: relative;
   z-index: 3;
   max-width: 32.6vw;
@@ -1499,7 +1505,7 @@ a[class] {
 }
 
 .effective-content__list-txt {
-  font-size: 1.56vw;
+  font-size: 1.26vw;
   line-height: 127.6%;
   letter-spacing: 0.01em;
   max-width: 32.6vw;
@@ -1512,7 +1518,8 @@ a[class] {
 }
 
 .blueblock--1 {
-  margin-top: -1.39vw;
+  margin-top: -2.99vw;
+  padding-top: 2.99vw;
 }
 
 .blueblock__container {
@@ -1669,6 +1676,11 @@ a[class] {
   width: 100%;
 }
 
+.fight-content__img picture {
+  display: block;
+  height: 100%;
+}
+
 .fight-content__img {
   position: absolute;
   bottom: 0;
@@ -1681,6 +1693,7 @@ a[class] {
 .fight-content__img img {
   max-width: initial;
   height: 100%;
+  margin-left: auto;
 }
 
 .fight-content__title {
@@ -2514,12 +2527,13 @@ a[class] {
 .order-head__img {
   position: absolute;
   top: 0;
-  left: 70px;
+  left: 0px;
   bottom: 0;
 }
 
 .order-head__img img {
   height: 100%;
+  transform: scale(-1, 1);
 }
 
 .order-head__info {
@@ -2794,7 +2808,7 @@ header {
 @media (max-width: 1920px) {
   .order__head {
     max-width: 1024px;
-    padding-left: 100px;
+    padding-left: 0px;
     padding-right: 0;
     overflow: hidden;
   }
@@ -3124,8 +3138,8 @@ header {
   }
 
   .recomend {
-    padding-top: 8vw;
-    padding-bottom: 14.13vw;
+    padding-top: 10vw;
+    padding-bottom: 10vw;
   }
 
   .recomend__title {
@@ -3151,7 +3165,8 @@ header {
   }
 
   .reviews {
-    padding-bottom: 10.67vw;
+    padding-top: 10vw;
+    padding-bottom: 10vw;
   }
 
   .reviews__container {
@@ -3257,8 +3272,8 @@ header {
   }
 
   .approved {
-    padding-top: 10.67vw;
-    padding-bottom: 13.33vw;
+    padding-top: 10vw;
+    padding-bottom: 10vw;
   }
 
   .approved__container {
@@ -3304,8 +3319,8 @@ header {
   }
 
   .choice {
-    padding-top: 15.2vw;
-    padding-bottom: 12vw;
+    padding-top: 10vw;
+    padding-bottom: 10vw;
   }
 
   .choice__container {
@@ -3410,6 +3425,8 @@ header {
 
   .revolutional {
     position: relative;
+    padding-top: 10vw;
+    padding-bottom: 10vw;
   }
 
   .revolutional__container {
@@ -3417,7 +3434,7 @@ header {
   }
 
   .revolutional-content__title {
-    font-size: 7.47vw;
+    font-size: 11.47vw;
     line-height: 105.6%;
     margin-bottom: 5.07vw;
   }
@@ -3561,8 +3578,8 @@ header {
   }
 
   .works__top {
-    padding-top: 14.4vw;
-    padding-bottom: 12.27vw;
+    padding-top: 10vw;
+    padding-bottom: 10vw;
   }
 
   .blueblock {
@@ -3570,8 +3587,8 @@ header {
   }
 
   .expect {
-    padding-top: 0;
-    padding-bottom: 10.4vw;
+    padding-top: 10vw;
+    padding-bottom: 10vw;
   }
 
   .expect__container {
@@ -3679,8 +3696,8 @@ header {
   }
 
   .effective {
-    padding-top: 12.27vw;
-    padding-bottom: 20vw;
+    padding-top: 10vw;
+    padding-bottom: 10vw;
     background-color: rgb(203, 242, 255);
   }
 
@@ -3881,6 +3898,10 @@ header {
     display: block;
   }
 
+  .fight-content {
+    padding-top: 0;
+  }
+
   .fight__container {
     padding-left: 2.67vw;
     padding-top: 10.67vw;
@@ -3889,7 +3910,7 @@ header {
 
   .fight-content__img {
     position: initial;
-    margin-left: -2.67vw;
+    margin-left: 0;
     margin-top: -32.67vw;
     padding: 0;
   }
@@ -3897,8 +3918,20 @@ header {
   .fight-content__img img {
     max-width: 100%;
     padding-left: 20vw;
-    width: 100%;
+    width: 75%;
     padding-top: 26px;
+  }
+
+  .fight-content__rx {
+    position: absolute;
+    left: 3.04vw;
+    bottom: -4vw;
+    top: initial;
+    width: 48.71vw;
+}
+
+  .fight-content__rx .desctop {
+    display: block;
   }
 
   .fight-content__title {
@@ -3924,8 +3957,9 @@ header {
   .fight-content__txt {
     font-weight: 500;
     font-size: 4.8vw;
-    margin-bottom: 2.67vw;
+    margin-bottom: 8.67vw;
     max-width: initial;
+    
   }
 
   .fight-content__mobile {
@@ -3992,6 +4026,10 @@ header {
     padding-left: 0.8vw;
     font-size: 4.27vw;
     color: #393c3b;
+  }
+
+  .fight-content__img picture {
+    display: none;
   }
 
   .btn {
@@ -4207,6 +4245,7 @@ header {
 
   .order-head__img {
     left: 0;
+    background: #f8fcff;
   }
 
   .order-head__subtitle,
@@ -4225,8 +4264,10 @@ header {
   }
 
   .order-head__info {
-    padding-left: 160px;
+    padding-left: 130px;
   }
+
+  
 
   .order-head {
     padding-top: 14px;
@@ -4236,7 +4277,10 @@ header {
   }
 
   .order-head__img img {
-    width: 150px;
+    
+    width: auto;
+    height: 100%;
+    object-fit: contain;
   }
 
   .order-content__left,
@@ -4517,7 +4561,7 @@ header {
   .footer {
     padding-top: 10.67vw;
     padding-bottom: 12.8vw;
-    margin-top: -5.07vw;
+    margin-top: -4px;
   }
 
   .footer__container {
@@ -4589,7 +4633,7 @@ header {
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .order-content__left {
-    padding-right: 20px;
+    padding-left: 20px;
     width: 60%;
   }
 
@@ -4598,7 +4642,7 @@ header {
   }
 
   .order-content__inner {
-    flex-direction: row;
+    flex-direction: row-reverse;
     align-items: flex-start;
   }
 
