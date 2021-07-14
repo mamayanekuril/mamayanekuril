@@ -1726,7 +1726,7 @@ a[class] {
 }
 
 .fight__container {
-  padding-left: 13vw;
+  padding-left: 15vw;
   position: relative;
   padding-bottom: 4.06vw;
 }
@@ -1753,15 +1753,15 @@ a[class] {
   bottom: 0;
   top: 0;
   z-index: 1;
-  right: 0vw;
-  
+  right: -7vw;
+  overflow: hidden;
 }
 
 .fight-content__img img {
   max-width: initial;
-  height: 100%;
+  height: 104%;
   margin-left: auto;
-  transform: scale(-1, 1);
+  transform: rotate(5deg);
 }
 
 .fight-content__title {
@@ -1769,13 +1769,15 @@ a[class] {
   font-size: 4.69vw;
   line-height: 105.6%;
   color: #fff;
-  text-shadow: 0px 0px 7.504px #ff0066;
+  /* text-shadow: 0px 0px 7.504px #ff0066; */
+  text-shadow: 2px 2px 0 #ff0066, 2px -1px 0 #ff0066, 1px 1px 0 #ff0066, -2px 1px 0 #ff0066, -1px 2px 0 #ff0066, -2px -2px 0 #ff0066, -1px -1px 0 #ff0066, -1px -1px 0 #ff0066;
   text-transform: uppercase;
   margin-bottom: 0.83vw;
 }
 .fight-content__title span span{
   color: #f70036;
-  text-shadow: 0px 0px 7.504px #fff;
+  /* text-shadow: 0px 0px 7.504px #fff; */
+  text-shadow: 2px 2px 0 #fff, 2px -1px 0 #fff, 1px 1px 0 #fff, -2px 1px 0 #fff, -1px 2px 0 #fff, -2px -2px 0 #fff, -1px -1px 0 #fff, -1px -1px 0 #fff;
 }
 
 .fight-content__subtitle {
@@ -1783,7 +1785,8 @@ a[class] {
   font-size: 3.07vw;
   line-height: 105.6%;
   color: #fff;
-  text-shadow: 0px 0px 7.504px #ff0066;
+  /* text-shadow: 0px 0px 7.504px #ff0066; */
+  text-shadow: 2px 2px 0 #ff0066, 2px -1px 0 #ff0066, 1px 1px 0 #ff0066, -2px 1px 0 #ff0066, -1px 2px 0 #ff0066, -2px -2px 0 #ff0066, -1px -1px 0 #ff0066, -1px -1px 0 #ff0066;
   text-transform: uppercase;
   margin-bottom: 2.08vw;
 }
@@ -4703,7 +4706,7 @@ header {
   .footer {
     padding-top: 10.67vw;
     padding-bottom: 12.8vw;
-    margin-top: -4px;
+    margin-top: -1px;
   }
 
   .footer__container {
