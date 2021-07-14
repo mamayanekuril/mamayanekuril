@@ -1307,6 +1307,7 @@ a[class] {
   padding-top: 4vw;
   padding-bottom: 4vw;
   z-index: 9;
+  background: #ffeef6;
 }
 
 .expect__container {
@@ -1379,6 +1380,8 @@ a[class] {
   padding-left: 1.25vw;
   position: relative;
   z-index: 4;
+  color: #0032a9;
+  font-weight: bold;
 }
 
 .expect-content__top-txt {
@@ -1386,11 +1389,12 @@ a[class] {
   font-weight: 500;
   font-size: 1.5vw;
   line-height: 120.6%;
-  color: #1d4f86;
+  color: #fff;
   margin-bottom: 2.92vw;
   letter-spacing: 0.01em;
   position: relative;
   z-index: 4;
+  text-shadow: 2px 2px 0 #ff328e, 2px -1px 0 #ff328e, 1px 1px 0 #ff328e, -2px 1px 0 #ff328e, -1px 2px 0 #ff328e, -2px -2px 0 #ff328e, -1px -1px 0 #ff328e, -1px -1px 0 #ff328e;
 }
 
 .expect-content__list {
@@ -1398,6 +1402,7 @@ a[class] {
   margin-left: 7.29vw;
   position: relative;
   z-index: 4;
+  color: #0032a9;
 }
 
 .expect-content__list li {
@@ -1408,7 +1413,8 @@ a[class] {
   font-weight: 500;
   font-size: 1.67vw;
   line-height: 133.6%;
-  color: #000;
+  color: #0032a9;
+  font-weight: bold;
 }
 
 .expect-content__list li:last-child {
@@ -1430,10 +1436,11 @@ a[class] {
   font-style: italic;
   font-size: 2.08vw;
   line-height: 133.6%;
-  color: #000;
+  color: #0032a9;
   position: relative;
   z-index: 4;
   padding-left: 6.46vw;
+  font-weight: bold;
 }
 
 .expect-content__bottom-txt mark {
@@ -1455,7 +1462,7 @@ a[class] {
   margin-left: auto;
   margin-right: auto;
   transform: scale(-1, 1);
-  background-size: contain;
+  background-size: 100% 100%;
 }
 
 .effective__btn {
@@ -1469,7 +1476,7 @@ a[class] {
 }
 
 .effective__container {
-  padding-left: 2.49vw;
+  padding-left: 4.49vw;
   transform: scale(-1, 1);
 
 }
@@ -1480,7 +1487,7 @@ a[class] {
   line-height: 105.6%;
   text-transform: uppercase;
   color: #033c7a;
-  margin-bottom: 3.96vw;
+  margin-bottom: 1.96vw;
   position: relative;
   z-index: 3;
   max-width: 50%;
@@ -1508,10 +1515,10 @@ a[class] {
   font-size: 3vw;
   line-height: 127.6%;
   color: white;
-  margin-bottom: 2.84vw;
+  margin-bottom: 1.96vw;
   position: relative;
   z-index: 3;
-  max-width: 40.5vw;
+  max-width: 44.5vw;
   text-shadow: 1px 1px 0 #02015a, 1px 0 0 #02015a, 0 1px 0 #02015a, -1px -1px 0 #02015a, -1px 0 0 #02015a, 0 -1px 0 #02015a;
 }
 .effective-content__txt span{
@@ -1544,7 +1551,7 @@ a[class] {
 }
 
 .effective-content__list-item:not(:last-child) {
-  margin-bottom: 3.54vw;
+  margin-bottom: 1.96vw;
 }
 
 .effective-content__list-icon {
@@ -1569,7 +1576,7 @@ a[class] {
   font-size: 1.66vw;
   line-height: 127.6%;
   letter-spacing: 0.01em;
-  max-width: 32.6vw;
+  max-width: 38.6vw;
 }
 
 .blueblock {
@@ -3766,7 +3773,6 @@ header {
     padding-left: 0;
     font-weight: 400;
     font-size: 5.07vw;
-    color: #1d4f86;
     margin-bottom: 5.87vw;
   }
 
