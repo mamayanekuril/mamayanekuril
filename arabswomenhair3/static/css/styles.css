@@ -3720,9 +3720,22 @@ header {
     padding-bottom: 10vw;
   }
 
-  .blueblock {
+  .blueblock__container {
+    padding: 4vw;
+  }
+
+  .blueblock__row {
+    height: auto;
+  }
+
+  .blueblock__link {
     display: none;
   }
+
+  .blueblock__txt {
+    width: 100%;
+    font-size: 5.08vw;
+}
 
   .expect {
     padding-top: 10vw;
