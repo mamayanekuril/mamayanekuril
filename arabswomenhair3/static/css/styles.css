@@ -1217,26 +1217,27 @@ a[class] {
 .works__bg {
   position: absolute;
   bottom: 0;
-  right: 0;
-  top: 0;
+    right: -8vw;
+    top: 3vw;
+    transform: rotate(
+16deg
+);
 }
 
 .works__bg img {
   margin-left: auto;
-  /* max-width: 73.09vw; */
-  max-height: 100%;
-  height: 100%;
+  height: 112%;
   transform: scale(-1,1);
 }
 
 .works-content__title {
   font-weight: 700;
-  font-size: 3vw;
-  line-height: 105.6%;
+  font-size: 3.4vw;
+  line-height: 127.6%;
   text-transform: uppercase;
   color: #fff;
   margin-bottom: 2.97vw;
-  max-width: 50%;
+  max-width: 60%;
   text-shadow: 2px 2px 0 #b57b56, 2px -1px 0 #b57b56, 1px 1px 0 #b57b56, -2px 1px 0 #b57b56, -1px 2px 0 #b57b56, -2px -2px 0 #b57b56, -1px -1px 0 #b57b56, -1px -1px 0 #b57b56;
 }
 
@@ -1897,6 +1898,7 @@ a[class] {
 .intro-content__suptitle {
   font-style: italic;
   font-size: 2vw;
+  padding-left: 9vw;
   margin-bottom: -0.68vw;
   line-height: 127.6%;
   text-transform: uppercase;
@@ -1922,6 +1924,7 @@ a[class] {
 
 .intro-content__title-1 {
   font-size: 6.5vw;
+  padding-left: 9vw;
   margin-bottom: -2.55vw;
   text-transform: uppercase;
   color: #ff1f12;
@@ -1940,7 +1943,7 @@ a[class] {
   text-transform: uppercase;
   color: #fff910;
   font-size: 7.5vw;
-  padding-left: 6vw;
+  padding-left: 15vw;
   margin-bottom: -0.94vw;
   text-shadow:  2px 2px 0 #00b0ff,
                 2px -1px 0 #00b0ff,
@@ -1963,7 +1966,7 @@ a[class] {
   margin-top: 10px;
   font-style: italic;
   font-size: 1.93vw;
-  padding-left: 18vw;
+  padding-left: 27vw;
   line-height: 127.6%;
   color: #3671b8;
   text-align: center;
