@@ -1217,11 +1217,10 @@ a[class] {
 .works__bg {
   position: absolute;
   bottom: 0;
-    right: -8vw;
-    top: 3vw;
-    transform: rotate(
-16deg
-);
+  right: -8vw;
+  top: 3vw;
+  transform: rotate(16deg);
+  max-width: 60vw;
 }
 
 .works__bg img {
