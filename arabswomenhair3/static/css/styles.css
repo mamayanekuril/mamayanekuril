@@ -3682,7 +3682,7 @@ header {
     top: 90vw;
     left: 0;
     right: 0;
-    padding-left: 4vw;
+    padding-left: 20vw;
   }
 
   .expect-content__rx img {
@@ -3959,7 +3959,7 @@ header {
   }
 
   .use__line-bottom {
-    background: #316ed4;
+    
     margin-top: 10.67vw;
   }
 
