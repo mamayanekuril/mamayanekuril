@@ -1158,7 +1158,7 @@ a[class] {
 
 .revolutional-content__subtitle {
   font-size: 3.07vw;
-  padding-right: 627px;
+  max-width: 50vw;
   color: #06407d;
   line-height: 105.6%;
   margin-bottom: 1.98vw;
@@ -2984,6 +2984,10 @@ header {
     margin-bottom: 8px;
   }
 
+  .order-content__head-title span {
+    text-align: center;
+  }
+
   .order-content__head {
     padding-top: 18px;
     padding-bottom: 18px;
@@ -3232,6 +3236,13 @@ header {
   .order-head {
     padding-top: 10px;
     padding-bottom: 22px;
+  }
+}
+
+@media (min-width: 568px) and (max-width: 767px) {
+  .btn {
+    height: 4.69vw;
+    font-size: 2.08vw;
   }
 }
 
@@ -3563,6 +3574,7 @@ header {
     font-size: 5.33vw;
     margin-bottom: 7.73vw;
     padding: 0;
+    max-width: initial;
   }
 
   .revolutional-content__txt {
@@ -4890,8 +4902,11 @@ header {
 }
 
 @media (min-width: 568px) and (max-width: 767px) {
+
+
+
   .order-content__left {
-    padding-right: 14px;
+    padding-left: 14px;
     width: 300px;
   }
 
@@ -4944,7 +4959,7 @@ header {
   }
 
   .order-content__inner {
-    flex-direction: row;
+    flex-direction: row-reverse;
     align-items: flex-start;
   }
 
