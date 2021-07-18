@@ -1276,6 +1276,7 @@ a[class] {
     height: 100%;
     margin-left: auto;
     max-width: 98%;
+    width: auto;
 }
 .effective-content__list {
     padding-left: 0.46vw;
