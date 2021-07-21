@@ -1463,11 +1463,11 @@ a[class] {
     overflow: hidden;
 }
 .fight-content__img img {
-    max-width: initial;
+    max-width: 55vw;
     height: 104%;
     margin-left: auto;
     transform: rotate(5deg);
-    width: auto;
+    /* width: auto; */
 }
 .fight-content__title {
     font-weight: 700;
