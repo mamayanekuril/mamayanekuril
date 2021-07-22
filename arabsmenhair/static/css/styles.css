@@ -1177,6 +1177,7 @@ a[class] {
 }
 .expect-content__rx img {
     max-width: 27vw;
+    transform: scale(-1, 1);
 }
 .expect-content__title {
     font-family: "Roboto Condensed", sans-serif;
