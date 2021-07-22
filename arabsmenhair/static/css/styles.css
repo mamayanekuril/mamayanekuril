@@ -729,6 +729,7 @@ a[class] {
     margin-left: -1.25vw;
     margin-right: -1.25vw;
     margin-bottom: -2.92vw;
+    flex-direction: row-reverse;
 }
 .approved__btn,
 .reviews-card__rating,
@@ -742,7 +743,7 @@ a[class] {
     margin-bottom: 2.92vw;
 }
 .reviews-card {
-    background: #fff4f5;
+    background: #eee;
     height: 100%;
 }
 .reviews-card__inner {
@@ -820,6 +821,7 @@ a[class] {
     margin-left: -1.25vw;
     margin-right: -1.25vw;
     margin-bottom: -1.67vw;
+    flex-direction: row-reverse;
 }
 .approved-list__item {
     padding-left: 1.25vw;
@@ -897,7 +899,7 @@ a[class] {
     font-weight: 900;
     font-size: 7.48vw;
     line-height: 127.6%;
-    color: #e80a03;
+    color: #3433fe;
     text-transform: uppercase;
     letter-spacing: 0.01em;
 }
@@ -908,7 +910,7 @@ a[class] {
     text-transform: uppercase;
 }
 .proof__subtitle {
-    color: #0064f9;
+    color: #f60;
     line-height: 127.6%;
     font-family: "Roboto Condensed", sans-serif;
     letter-spacing: 0.01em;
@@ -1132,6 +1134,8 @@ a[class] {
     padding-top: 4vw;
     padding-bottom: 4vw;
     z-index: 9;
+    background: url(../../static/images/general/expect-bg.jpg);
+    background-size: cover;
     
 }
 .expect__container {
@@ -1163,16 +1167,16 @@ a[class] {
 }
 .expect-content__img img {
     width: auto;
-    height: 100%;
+    height: 95%;
 }
 .expect-content__rx {
     position: absolute;
     z-index: 5;
-    right: 47vw;
+    right: 60vw;
     bottom: -4vw;
 }
 .expect-content__rx img {
-    max-width: 35vw;
+    max-width: 27vw;
 }
 .expect-content__title {
     font-family: "Roboto Condensed", sans-serif;
@@ -1180,11 +1184,36 @@ a[class] {
     font-size: 4.43vw;
     line-height: 133.6%;
     text-transform: uppercase;
-    color: #ff0074;
+    color: #0bccff;
     margin-bottom: -0.78vw;
     letter-spacing: -0.01em;
     position: relative;
     z-index: 4;
+    text-shadow: 
+		-0   -2px 0   #08A4FF,
+		 0   -2px 0   #08A4FF,
+		-0    2px 0   #08A4FF,
+		 0    2px 0   #08A4FF,
+		-2px -0   0   #08A4FF,
+		 2px -0   0   #08A4FF,
+		-2px  0   0   #08A4FF,
+		 2px  0   0   #08A4FF,
+		-1px -2px 0   #08A4FF,
+		 1px -2px 0   #08A4FF,
+		-1px  2px 0   #08A4FF,
+		 1px  2px 0   #08A4FF,
+		-2px -1px 0   #08A4FF,
+		 2px -1px 0   #08A4FF,
+		-2px  1px 0   #08A4FF,
+		 2px  1px 0   #08A4FF,
+		-2px -2px 0   #08A4FF,
+		 2px -2px 0   #08A4FF,
+		-2px  2px 0   #08A4FF,
+		 2px  2px 0   #08A4FF,
+		-2px -2px 0   #08A4FF,
+		 2px -2px 0   #08A4FF,
+		-2px  2px 0   #08A4FF,
+		 2px  2px 0   #08A4FF;
 }
 .expect-content__subtitle {
     font-family: "Roboto Condensed", sans-serif;
@@ -1195,20 +1224,69 @@ a[class] {
     padding-left: 1.25vw;
     position: relative;
     z-index: 4;
-    color: #0032a9;
+    color: #fff;
     font-weight: 700;
+    text-shadow: 
+		-0   -2px 0   #0BCCFF,
+		 0   -2px 0   #0BCCFF,
+		-0    2px 0   #0BCCFF,
+		 0    2px 0   #0BCCFF,
+		-2px -0   0   #0BCCFF,
+		 2px -0   0   #0BCCFF,
+		-2px  0   0   #0BCCFF,
+		 2px  0   0   #0BCCFF,
+		-1px -2px 0   #0BCCFF,
+		 1px -2px 0   #0BCCFF,
+		-1px  2px 0   #0BCCFF,
+		 1px  2px 0   #0BCCFF,
+		-2px -1px 0   #0BCCFF,
+		 2px -1px 0   #0BCCFF,
+		-2px  1px 0   #0BCCFF,
+		 2px  1px 0   #0BCCFF,
+		-2px -2px 0   #0BCCFF,
+		 2px -2px 0   #0BCCFF,
+		-2px  2px 0   #0BCCFF,
+		 2px  2px 0   #0BCCFF,
+		-2px -2px 0   #0BCCFF,
+		 2px -2px 0   #0BCCFF,
+		-2px  2px 0   #0BCCFF,
+		 2px  2px 0   #0BCCFF;
 }
 .expect-content__top-txt {
     padding-left: 1.46vw;
     font-weight: 500;
     font-size: 1.5vw;
     line-height: 120.6%;
-    color: #fff;
+    color: #ffe900;
     margin-bottom: 2.92vw;
     letter-spacing: 0.01em;
     position: relative;
     z-index: 4;
-    text-shadow: 2px 2px 0 #ff328e, 2px -1px 0 #ff328e, 1px 1px 0 #ff328e, -2px 1px 0 #ff328e, -1px 2px 0 #ff328e, -2px -2px 0 #ff328e, -1px -1px 0 #ff328e, -1px -1px 0 #ff328e;
+    text-shadow: 
+		-0   -2px 0   #FF8F47,
+		 0   -2px 0   #FF8F47,
+		-0    2px 0   #FF8F47,
+		 0    2px 0   #FF8F47,
+		-2px -0   0   #FF8F47,
+		 2px -0   0   #FF8F47,
+		-2px  0   0   #FF8F47,
+		 2px  0   0   #FF8F47,
+		-1px -2px 0   #FF8F47,
+		 1px -2px 0   #FF8F47,
+		-1px  2px 0   #FF8F47,
+		 1px  2px 0   #FF8F47,
+		-2px -1px 0   #FF8F47,
+		 2px -1px 0   #FF8F47,
+		-2px  1px 0   #FF8F47,
+		 2px  1px 0   #FF8F47,
+		-2px -2px 0   #FF8F47,
+		 2px -2px 0   #FF8F47,
+		-2px  2px 0   #FF8F47,
+		 2px  2px 0   #FF8F47,
+		-2px -2px 0   #FF8F47,
+		 2px -2px 0   #FF8F47,
+		-2px  2px 0   #FF8F47,
+		 2px  2px 0   #FF8F47;
 }
 .expect-content__list {
     margin-bottom: 1.51vw;
@@ -1225,7 +1303,7 @@ a[class] {
     font-weight: 500;
     font-size: 1.67vw;
     line-height: 133.6%;
-    color: #0032a9;
+    color: #000;
     font-weight: bold;
 }
 .expect-content__list li:last-child {
@@ -1245,11 +1323,12 @@ a[class] {
     font-style: italic;
     font-size: 2.08vw;
     line-height: 133.6%;
-    color: #0032a9;
+    color: #fff;
     position: relative;
     z-index: 4;
     padding-left: 6.46vw;
     font-weight: 700;
+    text-shadow: 0 -2px 0 #716e6e, 0 -2px 0 #716e6e, 0 2px 0 #716e6e, 0 2px 0 #716e6e, -2px 0 0 #716e6e, 2px 0 0 #716e6e, -2px 0 0 #716e6e, 2px 0 0 #716e6e, -1px -2px 0 #716e6e, 1px -2px 0 #716e6e, -1px 2px 0 #716e6e, 1px 2px 0 #716e6e, -2px -1px 0 #716e6e, 2px -1px 0 #716e6e, -2px 1px 0 #716e6e, 2px 1px 0 #716e6e, -2px -2px 0 #716e6e, 2px -2px 0 #716e6e, -2px 2px 0 #716e6e, 2px 2px 0 #716e6e, -2px -2px 0 #716e6e, 2px -2px 0 #716e6e, -2px 2px 0 #716e6e, 2px 2px 0 #716e6e;
 }
 .expect-content__bottom-txt mark {
     padding: 0;
@@ -1285,14 +1364,14 @@ a[class] {
 }
 .effective-content__title {
     font-weight: 700;
-    font-size: 3.13vw;
+    font-size: 3.93vw;
     line-height: 105.6%;
     text-transform: uppercase;
     color: #fff;
     margin-bottom: 1.96vw;
     position: relative;
     z-index: 3;
-    max-width: 50%;
+    max-width: 60vw;
     text-shadow: 
 		-0   -2px 0   #716E6E,
 		 0   -2px 0   #716E6E,
@@ -1326,7 +1405,7 @@ a[class] {
 }
 .effective-content__title span:not([class]) {
     font-size: 3.65vw;
-    color: #a98f00;
+    color: #b9b189;
     text-shadow: initial;
     font-weight: 900;
     
@@ -1397,8 +1476,11 @@ a[class] {
     margin-bottom: 1.96vw;
 }
 .effective-content__list-icon {
-    width: 2.92vw;
+    width: 3.92vw;
     padding-top: 15px;
+}
+.effective-content__list-icon img {
+    width: 100%;
 }
 .effective-content__list-info {
     width: calc(100% - 2.92vw);
@@ -1481,7 +1563,7 @@ a[class] {
     margin-bottom: 4vw;
 }
 .use__line-bottom {
-    background: #f70036;
+    background: #316ED4;
     margin-top: 4vw;
     margin-bottom: 0;
 }
@@ -1597,10 +1679,10 @@ a[class] {
     overflow: hidden;
 }
 .fight-content__img img {
-    max-width: initial;
+    max-width: 43vw;
     height: 100%;
     transform: scale(-1, 1);
-    width: auto;
+    /* width: auto; */
 }
 .fight-content__title {
     font-weight: 700;
@@ -1636,7 +1718,7 @@ a[class] {
     margin-bottom: 0.83vw;
 }
 .fight-content__title span span {
-    color: #0086d4;
+    color: #0064f9;
     text-shadow: initial;
     font-weight: 900;
 }
@@ -1780,7 +1862,47 @@ a[class] {
     margin-bottom: -0.55vw;
     text-transform: uppercase;
     color: #fcf813;
-    text-shadow: 2px 2px 0 #0e88ff, 2px -1px 0 #0e88ff, 1px 1px 0 #0e88ff, -2px 1px 0 #0e88ff, -1px 2px 0 #0e88ff, -2px -2px 0 #0e88ff, -1px -1px 0 #0e88ff, -1px -1px 0 #0e88ff;
+    text-shadow: 
+		-0   -4px 0   #0E88FF,
+		 0   -4px 0   #0E88FF,
+		-0    4px 0   #0E88FF,
+		 0    4px 0   #0E88FF,
+		-4px -0   0   #0E88FF,
+		 4px -0   0   #0E88FF,
+		-4px  0   0   #0E88FF,
+		 4px  0   0   #0E88FF,
+		-1px -4px 0   #0E88FF,
+		 1px -4px 0   #0E88FF,
+		-1px  4px 0   #0E88FF,
+		 1px  4px 0   #0E88FF,
+		-4px -1px 0   #0E88FF,
+		 4px -1px 0   #0E88FF,
+		-4px  1px 0   #0E88FF,
+		 4px  1px 0   #0E88FF,
+		-2px -4px 0   #0E88FF,
+		 2px -4px 0   #0E88FF,
+		-2px  4px 0   #0E88FF,
+		 2px  4px 0   #0E88FF,
+		-4px -2px 0   #0E88FF,
+		 4px -2px 0   #0E88FF,
+		-4px  2px 0   #0E88FF,
+		 4px  2px 0   #0E88FF,
+		-3px -4px 0   #0E88FF,
+		 3px -4px 0   #0E88FF,
+		-3px  4px 0   #0E88FF,
+		 3px  4px 0   #0E88FF,
+		-4px -3px 0   #0E88FF,
+		 4px -3px 0   #0E88FF,
+		-4px  3px 0   #0E88FF,
+		 4px  3px 0   #0E88FF,
+		-4px -4px 0   #0E88FF,
+		 4px -4px 0   #0E88FF,
+		-4px  4px 0   #0E88FF,
+		 4px  4px 0   #0E88FF,
+		-4px -4px 0   #0E88FF,
+		 4px -4px 0   #0E88FF,
+		-4px  4px 0   #0E88FF,
+		 4px  4px 0   #0E88FF;
 }
 .intro-content__title-2 {
     text-transform: uppercase;
@@ -1789,7 +1911,47 @@ a[class] {
     font-size: 9vw;
     padding-left: 10vw;
     margin-bottom: -0.94vw;
-    text-shadow: 2px 2px 0 #0086d4, 2px -1px 0 #0086d4, 1px 1px 0 #0086d4, -2px 1px 0 #0086d4, -1px 2px 0 #0086d4, -2px -2px 0 #0086d4, -1px -1px 0 #0086d4, -1px -1px 0 #0086d4;
+    text-shadow: 
+		-0   -4px 0   #0086D4,
+		 0   -4px 0   #0086D4,
+		-0    4px 0   #0086D4,
+		 0    4px 0   #0086D4,
+		-4px -0   0   #0086D4,
+		 4px -0   0   #0086D4,
+		-4px  0   0   #0086D4,
+		 4px  0   0   #0086D4,
+		-1px -4px 0   #0086D4,
+		 1px -4px 0   #0086D4,
+		-1px  4px 0   #0086D4,
+		 1px  4px 0   #0086D4,
+		-4px -1px 0   #0086D4,
+		 4px -1px 0   #0086D4,
+		-4px  1px 0   #0086D4,
+		 4px  1px 0   #0086D4,
+		-2px -4px 0   #0086D4,
+		 2px -4px 0   #0086D4,
+		-2px  4px 0   #0086D4,
+		 2px  4px 0   #0086D4,
+		-4px -2px 0   #0086D4,
+		 4px -2px 0   #0086D4,
+		-4px  2px 0   #0086D4,
+		 4px  2px 0   #0086D4,
+		-3px -4px 0   #0086D4,
+		 3px -4px 0   #0086D4,
+		-3px  4px 0   #0086D4,
+		 3px  4px 0   #0086D4,
+		-4px -3px 0   #0086D4,
+		 4px -3px 0   #0086D4,
+		-4px  3px 0   #0086D4,
+		 4px  3px 0   #0086D4,
+		-4px -4px 0   #0086D4,
+		 4px -4px 0   #0086D4,
+		-4px  4px 0   #0086D4,
+		 4px  4px 0   #0086D4,
+		-4px -4px 0   #0086D4,
+		 4px -4px 0   #0086D4,
+		-4px  4px 0   #0086D4,
+		 4px  4px 0   #0086D4;
 }
 .intro-content__foot-title,
 .intro-content__txt,
@@ -3088,7 +3250,7 @@ header {
         margin-bottom: 1.6vw;
         letter-spacing: -0.02em;
         transform: rotate(-2.96deg);
-        color: #ff144c;
+        /* color: #ff144c; */
     }
     .proof__subtitle {
         font-size: 5.87vw;
@@ -3237,7 +3399,7 @@ header {
     }
     .expect-content__rx {
         bottom: initial;
-    top: 100vw;
+    top: 89vw;
     left: 0;
     right: 0;
     padding-left: 0;
@@ -3314,7 +3476,7 @@ header {
         font-family: Roboto;
         font-weight: 900;
         font-size: 8.53vw;
-        color: #ef2627;
+        
         margin-bottom: 0;
         letter-spacing: 0.01em;
         text-align: center;
@@ -3325,7 +3487,7 @@ header {
         font-size: 6.4vw;
         margin-bottom: 9.6vw;
         padding-left: 0;
-        color: #1d4f86;
+        
         max-width: 73vw;
         margin-left: auto;
         margin-right: auto;
@@ -3349,7 +3511,7 @@ header {
     .expect-content__list li {
         margin-bottom: 5.87vw;
         font-size: 4.8vw;
-        color: #1d4f86;
+        
     }
     .expect-content__list li:last-child {
         display: flex;
@@ -3371,7 +3533,7 @@ header {
         font-style: normal;
         font-size: 5.33vw;
         line-height: 133.6%;
-        color: #1d4f86;
+        
         padding-left: 0;
         max-width: 72.53vw;
     }
@@ -3769,6 +3931,7 @@ header {
         text-align: right;
         letter-spacing: 0.01em;
         color: #feee1b;
+        text-shadow: initial;
     }
     .intro-content__txt {
         font-size: 22px;
