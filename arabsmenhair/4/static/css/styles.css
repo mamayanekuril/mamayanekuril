@@ -4034,7 +4034,7 @@ header {
         left: -35.33vw;
         top: -3.53vw;
         z-index: 3;
-        width: 50vw;
+        width: 52vw;
         max-width: initial;
     }
     .intro-content__list-img img {
@@ -4753,5 +4753,9 @@ header {
 
     .intro-contain__subtitle {
         font-size: 1.4vw;
+    }
+
+    .intro-content__list-img {
+        max-width: 26vw;
     }
 }
