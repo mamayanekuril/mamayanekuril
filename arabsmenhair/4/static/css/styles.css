@@ -4034,7 +4034,8 @@ header {
         left: -35.33vw;
         top: -3.53vw;
         z-index: 3;
-        width: 55vw;
+        width: 50vw;
+        max-width: initial;
     }
     .intro-content__list-img img {
         max-width: 100%;
