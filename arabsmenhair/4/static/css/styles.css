@@ -2052,9 +2052,9 @@ a[class] {
     position: absolute;
     left: -15.83vw;
     top: -3.5vw;
+    max-width: 24.1vw;
 }
 .intro-content__list-img img {
-    max-width: 24.1vw;
     width: 100%;
     transform: scale(1, 1);
 }
@@ -3575,32 +3575,6 @@ header {
         font-family: Roboto;
         font-weight: 900;
         font-size: 8.53vw;
-        text-shadow: 
-		-0   -2px 0   #FF8F47,
-		 0   -2px 0   #FF8F47,
-		-0    2px 0   #FF8F47,
-		 0    2px 0   #FF8F47,
-		-2px -0   0   #FF8F47,
-		 2px -0   0   #FF8F47,
-		-2px  0   0   #FF8F47,
-		 2px  0   0   #FF8F47,
-		-1px -2px 0   #FF8F47,
-		 1px -2px 0   #FF8F47,
-		-1px  2px 0   #FF8F47,
-		 1px  2px 0   #FF8F47,
-		-2px -1px 0   #FF8F47,
-		 2px -1px 0   #FF8F47,
-		-2px  1px 0   #FF8F47,
-		 2px  1px 0   #FF8F47,
-		-2px -2px 0   #FF8F47,
-		 2px -2px 0   #FF8F47,
-		-2px  2px 0   #FF8F47,
-		 2px  2px 0   #FF8F47,
-		-2px -2px 0   #FF8F47,
-		 2px -2px 0   #FF8F47,
-		-2px  2px 0   #FF8F47,
-		 2px  2px 0   #FF8F47;
-        
         margin-bottom: 0;
         letter-spacing: 0.01em;
         text-align: center;
