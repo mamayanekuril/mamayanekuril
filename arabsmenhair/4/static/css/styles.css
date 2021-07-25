@@ -2072,7 +2072,7 @@ a[class] {
     width: 100%;
 }
 .intro-content__list-info {
-    margin-left: -17px;
+    margin-left: -1vw;
     padding-left: 1.46vw;
     width: calc(100% - 1.88vw);
 }
@@ -4756,6 +4756,6 @@ header {
     }
 
     .intro-content__list-img {
-        max-width: 26vw;
+        max-width: 28vw;
     }
 }
