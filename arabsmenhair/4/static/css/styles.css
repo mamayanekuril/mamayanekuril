@@ -4746,7 +4746,7 @@ header {
 
 
 
-@media (min-width: 568px) and (max-width: 767px) {
+@media (min-width: 568px) and (max-width: 812px) {
     .intro-contain__title {
         font-size: 1.81vw;
     }
@@ -4757,5 +4757,6 @@ header {
 
     .intro-content__list-img {
         max-width: 28vw;
+        width: 100%;
     }
 }
