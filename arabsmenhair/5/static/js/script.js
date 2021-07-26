@@ -207,6 +207,7 @@ var forms = function () {
   
         xhttp.send();
       } else {
+        console.log(document.querySelector('select[name="state"] option'))
         document.querySelector('select[name="state"] option').selected = true
       }
     };
