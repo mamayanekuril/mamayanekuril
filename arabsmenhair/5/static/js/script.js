@@ -206,6 +206,8 @@ var forms = function () {
         };
   
         xhttp.send();
+      } else {
+        document.querySelector('select[name="state"] option').selected = true
       }
     };
   

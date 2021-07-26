@@ -3829,20 +3829,20 @@ header {
     .fight-content__img {
         position: initial;
         margin-left: 0vw;
-        margin-top: -40vw;
+        margin-top: -50vw;
         padding: 0;
         overflow: initial;
     }
     .fight-content__img img {
         max-width: 100%;
         padding-left: 20vw;
-        width: 75%;
+        width: 80vw;
         margin-bottom: 0vw;
         padding-top: 0;
         margin-left: 45vw;
         position: relative;
         left: 10vw;
-        top: -10vw;
+        top: 0vw;
     }
     .fight-content__rx {
         position: absolute;
