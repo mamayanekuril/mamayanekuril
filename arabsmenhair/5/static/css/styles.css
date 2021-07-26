@@ -3973,7 +3973,7 @@ header {
         background-size: 120%;
         padding-top: 0;
         padding-right: 0;
-        padding-bottom: 0;
+        padding-bottom: 0; 
     }
     .intro__content {
         margin-right: 0;
@@ -4032,7 +4032,7 @@ header {
         margin-right: auto;
     }
     .intro-content__list-img {
-        left: -20.33vw;
+        left: -18vw;
         top: -1.53vw;
         z-index: 3;
         width: 25vw;
