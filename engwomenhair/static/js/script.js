@@ -348,6 +348,12 @@ var forms = function () {
           });
         });
       }
+
+      const options = document.querySelectorAll('select[name="state"] option')
+
+      if (options.length <= 1) {
+        document.querySelector('select[name="state"] option').selected = true
+      }
     };
   
     var init = function init() {
