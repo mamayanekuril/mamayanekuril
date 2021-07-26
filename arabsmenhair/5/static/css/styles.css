@@ -4022,7 +4022,7 @@ header {
     .intro-content__list {
         margin-top: 0;
         margin-left: auto;
-        width: 72.53vw;
+        width: 74.53vw;
         margin-right: 0;
     }
     .intro-contain__mobile img,
@@ -4032,7 +4032,7 @@ header {
         margin-right: auto;
     }
     .intro-content__list-img {
-        left: -20.33vw;
+        left: -23.33vw;
         top: -3.53vw;
         z-index: 3;
         width: 27vw;
@@ -4047,7 +4047,7 @@ header {
     .intro-content__list-item {
         padding-left: 11.47vw;
         padding-top: 0;
-        max-width: 72.53vw;
+        max-width: 74.53vw;
     }
     .intro-content__list-item:not(:last-child) {
         margin-bottom: 2.4vw;
