@@ -4035,7 +4035,7 @@ header {
         left: -20.33vw;
         top: -3.53vw;
         z-index: 3;
-        width: 25vw;
+        width: 27vw;
         max-width: initial;
     }
     .intro-content__list-img img {
@@ -4087,6 +4087,8 @@ header {
         font-size: 4.2vw;
         margin-bottom: 0;
         width: 100%;
+        position: relative;
+        z-index: 5;
     }
     .intro-content__foot-txt {
         font-size: 3.7vw;
