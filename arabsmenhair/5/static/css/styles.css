@@ -4032,10 +4032,10 @@ header {
         margin-right: auto;
     }
     .intro-content__list-img {
-        left: -35.33vw;
+        left: -20.33vw;
         top: -3.53vw;
         z-index: 3;
-        width: 50vw;
+        width: 25vw;
         max-width: initial;
     }
     .intro-content__list-img img {
