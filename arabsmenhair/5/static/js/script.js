@@ -193,9 +193,9 @@ var forms = function () {
                 option.value = elem.state_name;
                 var store = localStorage.getItem(STORE_STATE);
   
-                if (store && option.value === JSON.parse(store)) {
-                  option.setAttribute('selected', true);
-                }
+                // if (store && option.value === JSON.parse(store)) {
+                //   option.setAttribute('selected', true);
+                // }
   
                 if (STATE) {
                   STATE.appendChild(option);
