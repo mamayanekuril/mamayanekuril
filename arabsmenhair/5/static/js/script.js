@@ -206,9 +206,6 @@ var forms = function () {
         };
   
         xhttp.send();
-      } else {
-        console.log(document.querySelector('select[name="state"] option'))
-        document.querySelector('select[name="state"] option').selected = true
       }
     };
   
@@ -297,6 +294,11 @@ var forms = function () {
     };
   
     var formsInit = function formsInit() {
+
+      
+
+      
+
       if (COUNTRY_SELECT) {
         loadCountry();
         COUNTRY_SELECT.addEventListener('change', function () {
@@ -354,6 +356,12 @@ var forms = function () {
             return inputName === key ? input.value = value : null;
           });
         });
+      }
+
+      const options = document.querySelectorAll('select[name="state"] option')
+
+      if (options.length <= 1) {
+        document.querySelector('select[name="state"] option').selected = true
       }
     };
   
