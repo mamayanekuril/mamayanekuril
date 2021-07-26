@@ -4509,10 +4509,10 @@ header {
         width: 210px;
     }
     .order__head {
-        max-width: 560px;
+        max-width: 514px;
         margin-left: auto;
         margin-right: auto;
-        height: 120px;
+        height: auto;
         margin-bottom: 4px;
     }
     .order-head__info {
