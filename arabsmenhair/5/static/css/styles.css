@@ -3970,7 +3970,7 @@ header {
     }
     .intro__top {
         background: url(../images/general/intro-m.jpg) no-repeat;
-        background-size: 125%;
+        background-size: 115%;
         padding-top: 0;
         padding-right: 0;
         padding-bottom: 0;
@@ -4032,7 +4032,7 @@ header {
         margin-right: auto;
     }
     .intro-content__list-img {
-        left: -25.33vw;
+        left: -20.33vw;
         top: -3.53vw;
         z-index: 3;
         width: 27vw;
