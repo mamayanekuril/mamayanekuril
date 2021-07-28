@@ -1760,6 +1760,7 @@ a[class] {
     font-size: 5.09vw;
     line-height: 105.6%;
     color: #fcf813;
+    max-width: 41vw;
     text-shadow: 
 		-0   -2px 0   #23C8DF,
 		 0   -2px 0   #23C8DF,
