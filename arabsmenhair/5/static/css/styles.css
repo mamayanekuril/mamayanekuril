@@ -2110,12 +2110,12 @@ a[class] {
     text-align: center;
 }
 .intro-content__foot-title {
-    font-size: 1.92vw;
+    font-size: 2.3vw;
     margin-bottom: 0;
-    line-height: 136.6%;
+    line-height: 1;
     letter-spacing: 0.01em;
     color: #030370;
-    width: 85%;
+    
     margin-left: auto;
     margin-right: auto;
 }
