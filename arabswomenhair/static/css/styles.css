@@ -3415,6 +3415,7 @@ header {
         font-size: 5.867vw;
         margin-bottom: 4vw;
         padding-left: 12.53vw;
+        max-width: initial;
     }
     .fight-content__subtitle span {
         font-style: italic;
