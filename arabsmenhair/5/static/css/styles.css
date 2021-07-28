@@ -1616,6 +1616,11 @@ a[class] {
     letter-spacing: 0.01em;
     color: #f5776f;
 }
+.blueblock__txt.big {
+    font-size: 2.58vw;
+}
+
+
 .blueblock__row {
     display: flex;
     align-items: center;
@@ -2105,7 +2110,7 @@ a[class] {
     text-align: center;
 }
 .intro-content__foot-title {
-    font-size: 1.52vw;
+    font-size: 1.92vw;
     margin-bottom: 0;
     line-height: 136.6%;
     letter-spacing: 0.01em;
