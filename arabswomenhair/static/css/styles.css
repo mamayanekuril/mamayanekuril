@@ -4296,4 +4296,8 @@ header {
     .intro-content__list-img img {
         max-width: 17vw;
     }
+
+    .intro-content__list-img {
+        top: -0.5vw;
+    }
 }
