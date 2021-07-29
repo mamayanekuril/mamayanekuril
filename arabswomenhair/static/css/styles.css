@@ -1577,7 +1577,7 @@ a[class] {
     font-style: italic;
     font-size: 2vw;
     padding-left: 9vw;
-    margin-bottom: -0.68vw;
+    margin-bottom: 0.32vw;
     line-height: 127.6%;
     text-transform: uppercase;
     color: #3d91f7;
@@ -1593,19 +1593,21 @@ a[class] {
     text-align: center;
 }
 .intro-content__title-1 {
-    font-size: 6.5vw;
-    padding-left: 9vw;
-    margin-bottom: -2.55vw;
+    font-size: 8vw;
+    line-height: 1;
+    padding-left: 0.9vw;
+    margin-bottom: -0.55vw;
     text-transform: uppercase;
     color: #ff1f12;
     text-shadow: 2px 2px 0 #fff, 2px -1px 0 #fff, 1px 1px 0 #fff, -2px 1px 0 #fff, -1px 2px 0 #fff, -2px -2px 0 #fff, -1px -1px 0 #fff, -1px -1px 0 #fff;
 }
 .intro-content__title-2 {
+    line-height: 1;
+    font-size: 9vw;
+    padding-left: 10vw;
+    margin-bottom: -0.94vw;
     text-transform: uppercase;
     color: #fff910;
-    font-size: 7.5vw;
-    padding-left: 15vw;
-    margin-bottom: -0.94vw;
     text-shadow: 2px 2px 0 #00b0ff, 2px -1px 0 #00b0ff, 1px 1px 0 #00b0ff, -2px 1px 0 #00b0ff, -1px 2px 0 #00b0ff, -2px -2px 0 #00b0ff, -1px -1px 0 #00b0ff, -1px -1px 0 #00b0ff;
 }
 .intro-content__foot-title,
@@ -1689,7 +1691,6 @@ a[class] {
     line-height: 1;
     letter-spacing: 0.01em;
     color: #030370;
-    
     margin-left: auto;
     margin-right: auto;
 }
