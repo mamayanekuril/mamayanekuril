@@ -3581,11 +3581,11 @@ header {
     }
     .intro-content__list-img {
         left: -24.33vw;
-        top: -12.53vw;
+        top: -0.53vw;
         z-index: 3;
     }
     .intro-content__list-img img {
-        max-width: 32vw;
+        max-width: 26vw;
         width: 32vw;
         transform: scale(1, 1);
     }
@@ -4285,5 +4285,15 @@ header {
     }
     .order-head__img {
         right: -150px;
+    }
+}
+
+@media (min-width: 568px) and (max-width: 767px) {
+    .intro__content {
+        margin-right: -3.82vw;
+    }
+
+    .intro-content__list-img img {
+        max-width: 17vw;
     }
 }
