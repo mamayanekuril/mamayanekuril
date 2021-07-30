@@ -4771,5 +4771,6 @@ header {
     .intro-content__list-img {
         max-width: 28vw;
         width: 100%;
+        left: -17.83vw;
     }
 }
