@@ -1,4 +1,16 @@
+function addVideo() {
+  const btn = document.querySelectorAll('.addVideo')
+  
+  btn.forEach(item => {
+    const output = item.querySelector('.outputVideo')
+    item.addEventListener('click', function() {
+      item.classList.add('addVideo--active')
+      output.innerHTML = `<iframe src="${this.dataset.video}" allow="autoplay; fullscreen" allowfullscreen></iframe>`
+    })
+  })
+}
 
+addVideo()
 
 const links = document.querySelectorAll('.footer-menu__link')
 
