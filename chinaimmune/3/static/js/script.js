@@ -112,6 +112,7 @@ order()
 
 function orderForm() {
   const form = document.getElementById('form')
+  if (!form) return
   form.addEventListener('submit', function(e) {
     const items = form.querySelectorAll('.intro-form__item')
 
