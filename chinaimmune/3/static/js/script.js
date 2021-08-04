@@ -5,7 +5,7 @@ function addVideo() {
     const output = item.querySelector('.outputVideo')
     item.addEventListener('click', function() {
       item.classList.add('addVideo--active')
-      output.innerHTML = `<iframe src="${this.dataset.video}" allow="autoplay; fullscreen" allowfullscreen></iframe>`
+      output.innerHTML = `<iframe src="${this.dataset.video}" allow="autoplay" frameborder="0" scrolling="no" allowfullscreen></iframe>`
     })
   })
 }
@@ -107,6 +107,29 @@ function order() {
 }
 
 order()
+
+
+
+function orderForm() {
+  const form = document.getElementById('form')
+  form.addEventListener('submit', function(e) {
+    const items = form.querySelectorAll('.intro-form__item')
+
+    items.forEach(item => {
+      if (!item.value) {
+        e.preventDefault()
+        item.style.borderColor = 'red'
+
+
+        item.addEventListener('focusin', function() {
+          item.style.borderColor = null
+        })
+      }
+    })
+  })
+}
+
+orderForm()
 
 const form = document.querySelector('.intro-form')
 
