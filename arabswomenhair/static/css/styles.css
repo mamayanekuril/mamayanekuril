@@ -1724,7 +1724,7 @@ a[class] {
     margin-right: -1.82vw;
 }
 .intro-form {
-    border: 4px solid #0c75dc;
+    border: 0.21vw solid #0c75dc;
     background: #fff;
     border-width: 0.21vw;
     border-radius: 0.42vw 0.42vw 0 0;
@@ -3611,7 +3611,7 @@ header {
         font-size: 3.20vw;
         font-weight: 700;
         padding-bottom: 1.87vw;
-        word-spacing: -1px;
+       
     }
     .intro-content__list-txt {
         font-size: 2vw;
