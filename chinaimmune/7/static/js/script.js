@@ -120,10 +120,11 @@ function orderForm() {
       if (!item.value) {
         e.preventDefault()
         item.style.borderColor = 'red'
-
+        item.style.boxShadow = '0 0 0 0.25rem rgb(220 53 69 / 100%)'
 
         item.addEventListener('focusin', function() {
           item.style.borderColor = null
+          item.style.boxShadow = null
         })
       }
     })
@@ -145,18 +146,22 @@ if (form) {
         
         if (name.value === '') {
             name.style.borderColor = 'red'
+            name.style.boxShadow = '0 0 0 0.25rem rgb(220 53 69 / 100%)'
         }
 
         if (mail.value === '') {
             mail.style.borderColor = 'red'
+            mail.style.boxShadow = '0 0 0 0.25rem rgb(220 53 69 / 100%)'
         }
 
         name.addEventListener('focusin', function() {
             name.style.borderColor = null
+            name.style.boxShadow = null
         })
 
         mail.addEventListener('focusin', function() {
             mail.style.borderColor = null
+            mail.style.boxShadow = null
         })
 
         
@@ -412,16 +417,17 @@ var forms = function () {
 
 
 
-  function link() {
-      const btn = document.querySelector('a.fight-content__btn')
-      if (!btn) return
-    if(window.matchMedia('(max-width: 768px)').matches){
-        btn.setAttribute('href', 'qualify.html') 
-    } else {
-        btn.setAttribute('href', '#') 
-    }
-}
+// function link() {
+//       const btn = document.querySelector('a.fight-content__btn')
+//       if (!btn) return
+//     if(window.innerWidth >= 768){
+//       btn.setAttribute('href', '#')
+//     } else if (window.innerWidth < 768) {
+      
+//         btn.setAttribute('href', 'qualify.html')
+//     }
+// }
 
 
-window.addEventListener('load', link)
-window.addEventListener('resize', link)
+// window.addEventListener('load', link)
+// window.addEventListener('resize', link)
