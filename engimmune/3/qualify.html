@@ -16,12 +16,12 @@
         <div class="qualify">
           <div class="qualify__title">IMMUNE SUPER PLUS RX</div>
           <div class="qualify__steps"><img src="static/images/general/qualify__steps.svg" alt=""></div>
-          <form class="qualify-form intro-form" action="/"> 
+          <form class="qualify-form" id="first" action="order.html"> 
             <div class="qualify-form__item"> 
-              <input class="qualify-form__input name" type="text" data-name placeholder="First Name">
+              <input class="intro-form__item qualify-form__input name required" type="text" data-name name="firstName" placeholder="First Name">
             </div>
             <div class="qualify-form__item"> 
-              <input class="qualify-form__input email" type="text" data-mail placeholder="Email">
+              <input class="intro-form__item qualify-form__input email required" type="text" data-mail name="email" placeholder="Email">
             </div>
             <div class="qualify-form__foot">
               <button class="qualify-form__btn">Qualify For My Order</button>
