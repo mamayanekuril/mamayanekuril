@@ -120,10 +120,11 @@ function orderForm() {
       if (!item.value) {
         e.preventDefault()
         item.style.borderColor = 'red'
-
+        item.style.boxShadow = '0 0 0 0.1rem rgb(220 53 69 / 100%)'
 
         item.addEventListener('focusin', function() {
           item.style.borderColor = null
+          item.style.boxShadow = null
         })
       }
     })
@@ -145,18 +146,22 @@ if (form) {
         
         if (name.value === '') {
             name.style.borderColor = 'red'
+            name.style.boxShadow = '0 0 0 0.1rem rgb(220 53 69 / 100%)'
         }
 
         if (mail.value === '') {
             mail.style.borderColor = 'red'
+            mail.style.boxShadow = '0 0 0 0.1rem rgb(220 53 69 / 100%)'
         }
 
         name.addEventListener('focusin', function() {
             name.style.borderColor = null
+            name.style.boxShadow = null
         })
 
         mail.addEventListener('focusin', function() {
             mail.style.borderColor = null
+            mail.style.boxShadow = null
         })
 
         
@@ -296,18 +301,6 @@ var forms = function () {
     var showSelected = function showSelected() {
       var value = COUNTRY_SELECT[COUNTRY_SELECT.selectedIndex].value;
       loadState(COUNTRY_SELECT[COUNTRY_SELECT.selectedIndex].dataset.country);
-      
-      // dataTable.forEach(function (elem) {
-      //   if (+value === +elem.id) {
-      //     document.getElementById('offer1-btn').setAttribute('data-shiping', elem.info.offer1);
-      //     document.getElementById('offer2-btn').setAttribute('data-shiping', elem.info.offer2);
-      //     document.getElementById('offer3-btn').setAttribute('data-shiping', elem.info.offer3);
-      //   } else if (value === 'country') {
-      //     document.getElementById('offer1-btn').setAttribute('data-shiping', '0.00');
-      //     document.getElementById('offer2-btn').setAttribute('data-shiping', '0.00');
-      //     document.getElementById('offer3-btn').setAttribute('data-shiping', '0.00');
-      //   }
-      // });
     };
   
     var getAccessToken = function getAccessToken() {
@@ -408,20 +401,3 @@ var forms = function () {
   }();
 
   forms.init()
-
-
-
-
-  function link() {
-      const btn = document.querySelector('a.fight-content__btn')
-      if (!btn) return
-    if(window.matchMedia('(max-width: 768px)').matches){
-        btn.setAttribute('href', 'qualify.html') 
-    } else {
-        btn.setAttribute('href', '#') 
-    }
-}
-
-
-window.addEventListener('load', link)
-window.addEventListener('resize', link)
