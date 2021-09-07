@@ -1,3 +1,24 @@
+function addVideo() {
+  const btn = document.querySelectorAll('.addVideo')
+  
+  btn.forEach(item => {
+    item.addEventListener('click', function() {
+      const parent = item.closest('.addVideo-wrapper')
+      const height = parent.offsetHeight
+      parent.style.height = height + 'px'
+      parent.innerHTML = `
+        <video controls="controls" autoplay="true">
+          <source src="static/video/${this.dataset.video}.mp4" type="video/mp4">
+        </video>
+      `
+      setTimeout(() => {
+        parent.style.height = null
+      }, 1000)
+    })
+  })
+}
+
+addVideo()
 
 
 const links = document.querySelectorAll('.footer-menu__link')
@@ -33,7 +54,6 @@ function order() {
     let sale = 0
     let shiping = 0
     let total = 0
-    let retailText = ''
 
     const item1 = document.querySelector('.item1')
     const item2 = document.querySelector('.item2')
@@ -54,7 +74,6 @@ function order() {
             price = Number(this.dataset.price)
             sale = Number(this.dataset.sale)
             
-            retailText = this.dataset.retail
             let event = new Event("change");
             select.dispatchEvent(event);
 
@@ -66,9 +85,9 @@ function order() {
     function output() {
         sp.textContent = `$${shiping}`
         save.textContent = `You Save $${sale}`
-        retail.textContent = `Retail: ${retailText}`
+        retail.textContent = `Retail: $${price}`
 
-        yt.textContent = `$${(price + shiping).toFixed(2)}`
+        yt.textContent = `$${(price + shiping - sale).toFixed(2)}`
     }
 
     if (!select) return
@@ -147,7 +166,7 @@ var INPUTS_EL = document.querySelectorAll('form  .intro-form__item');
 var API_TOKEN = 'mtbp56YSdFxwOZBR5tMf-LAvKyxtRb1JNKu-RvBidKm_bB0F63thfw7TlUBQR560G-k';
 var EMAIL = 'info@biolabrx.com';
 var API_URL = 'https://www.universal-tutorial.com/api/';
-var JSON_URL = './static/js/json/price.json';
+var JSON_URL = 'price.json';
 
 var forms = function () {
     var dataTable = null;
@@ -352,12 +371,6 @@ var forms = function () {
           });
         });
       }
-
-      const options = document.querySelectorAll('select[name="state"] option')
-
-      if (options.length <= 1) {
-        document.querySelector('select[name="state"] option').selected = true
-      }
     };
   
     var init = function init() {
@@ -377,7 +390,7 @@ var forms = function () {
 
 
   function link() {
-      const btn = document.querySelector('a.fight-content__btn')
+      const btn = document.querySelector('a.fight-content__btn.btn')
       if (!btn) return
     if(window.matchMedia('(max-width: 768px)').matches){
         btn.setAttribute('href', 'qualify.html') 

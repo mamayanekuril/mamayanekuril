@@ -1,3 +1,26 @@
+function addVideo() {
+  const btn = document.querySelectorAll('.addVideo')
+  
+  btn.forEach(item => {
+    item.addEventListener('click', function() {
+      const parent = item.closest('.addVideo-wrapper')
+      const height = parent.offsetHeight
+      parent.style.height = height + 'px'
+      parent.innerHTML = `
+        <video controls="controls" autoplay="true">
+          <source src="static/video/${this.dataset.video}.mp4" type="video/mp4">
+        </video>
+      `
+      setTimeout(() => {
+        parent.style.height = null
+      }, 1000)
+    })
+  })
+}
+
+addVideo()
+
+
 const links = document.querySelectorAll('.footer-menu__link')
 
 links.forEach(item => {
@@ -347,12 +370,6 @@ var forms = function () {
             return inputName === key ? input.value = value : null;
           });
         });
-      }
-
-      const options = document.querySelectorAll('select[name="state"] option')
-
-      if (options.length <= 1) {
-        document.querySelector('select[name="state"] option').selected = true
       }
     };
   
