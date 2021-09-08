@@ -2,10 +2,18 @@ function addVideo() {
   const btn = document.querySelectorAll('.addVideo')
   
   btn.forEach(item => {
-    const output = item.querySelector('.outputVideo')
     item.addEventListener('click', function() {
-      item.classList.add('addVideo--active')
-      output.innerHTML = `<iframe src="${this.dataset.video}" allow="autoplay" frameborder="0" scrolling="no" allowfullscreen></iframe>`
+      const parent = item.closest('.addVideo-wrapper')
+      const height = parent.offsetHeight
+      parent.style.height = height + 'px'
+      parent.innerHTML = `
+        <video controls="controls" autoplay="true">
+          <source src="static/video/${this.dataset.video}.mp4" type="video/mp4">
+        </video>
+      `
+      setTimeout(() => {
+        parent.style.height = null
+      }, 1000)
     })
   })
 }
