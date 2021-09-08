@@ -314,6 +314,11 @@ var forms = function () {
     };
   
     var formsInit = function formsInit() {
+
+      
+
+      
+
       if (COUNTRY_SELECT) {
         loadCountry();
         COUNTRY_SELECT.addEventListener('change', function () {
