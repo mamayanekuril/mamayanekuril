@@ -70,7 +70,7 @@ textarea {
 i {
     transform: scale(-1, 1);
 }
-@font-face {
+/* @font-face {
     font-family: Roboto;
     font-style: normal;
     font-weight: 900;
@@ -188,7 +188,7 @@ i {
     font-weight: 300;
     font-display: swap;
     src: url(https://fonts.gstatic.com/s/robotocondensed/v19/ieVi2ZhZI2eCN5jzbjEETS9weq8-33mZKCM.ttf) format("truetype");
-}
+} */
 body {
     margin: 0;
     font-size: 1rem;
@@ -1705,7 +1705,12 @@ a[class] {
     display: flex;
 }
 .intro__top {
-    background: url(../images/general/intro-bg.jpg) no-repeat;
+    background-image: url(../images/general/intro-bg.jpg);
+    background-image: -webkit-image-set("../../static/images/general/intro-bg.webp" type("image/webp"),"../../static/images/general/intro-bg.png" type("image/png"));
+    background-image: image-set("../../static/images/general/intro-bg.webp" type("image/webp"),"../../static/images/general/intro-bg.png" type("image/png"));
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     padding-top: 2.08vw;
     padding-bottom: 0.89vw;
@@ -3521,7 +3526,11 @@ header {
         max-width: initial;
     }
     .intro__top {
-        background: url(../images/general/intro-m.jpg) no-repeat;
+        background-image: url(../images/general/intro-m.jpg);
+        background-image: -webkit-image-set("../../static/images/general/intro-bg.webp" type("image/webp"),"../../static/images/general/intro-bg.png" type("image/png"));
+        background-image: image-set("../../static/images/general/intro-bg.webp" type("image/webp"),"../../static/images/general/intro-bg.png" type("image/png"));
+        background-position: 0 0;
+        background-repeat: no-repeat;
         background-size: cover;
         padding-top: 0;
         padding-right: 0;
