@@ -53,6 +53,11 @@ label,
 output {
     display: inline-block;
 }
+
+.intro-qr img {
+    max-width: 9.6vw;
+}
+
 .intro-form__item--select,
 .order-form select {
     -webkit-appearance: none;
@@ -70,125 +75,50 @@ textarea {
 i {
     transform: scale(-1, 1);
 }
-/* @font-face {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 900;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmYUtvAw.ttf) format("truetype");
-}
 @font-face {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 700;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmWUlvAw.ttf) format("truetype");
-}
-@font-face {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/roboto/v27/KFOmCnqEu92Fr1Me5Q.ttf) format("truetype");
-}
-@font-face {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmEU9vAw.ttf) format("truetype");
-}
-@font-face {
-    font-family: Roboto;
-    font-style: italic;
-    font-weight: 400;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/roboto/v27/KFOkCnqEu92Fr1Mu52xP.ttf) format("truetype");
-}
-@font-face {
-    font-family: Oswald;
-    font-style: normal;
+    font-family: "Tajawal";
+    src: url(../fonts/Tajawal-Light.eot);
+    src: url(../fonts/Tajawal-Light.woff2) format("woff2"), url(../fonts/Tajawal-Light.woff) format("woff");
     font-weight: 300;
+    font-style: "normal";
     font-display: swap;
-    src: url(https://fonts.gstatic.com/s/oswald/v36/TK3_WkUHHAIjg75cFRf3bXL8LICs169vgUE.ttf) format("truetype");
-}
-@font-face {
-    font-family: Oswald;
-    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Tajawal";
+    src: url(../fonts/Tajawal-Regular.eot);
+    src: url(../fonts/Tajawal-Regular.woff2) format("woff2"), url(../fonts/Tajawal-Regular.woff) format("woff");
     font-weight: 400;
+    font-style: "normal";
     font-display: swap;
-    src: url(https://fonts.gstatic.com/s/oswald/v36/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvgUE.ttf) format("truetype");
-}
-@font-face {
-    font-family: Oswald;
-    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Tajawal";
+    src: url(../fonts/Tajawal-Medium.eot);
+    src: url(../fonts/Tajawal-Medium.woff2) format("woff2"), url(../fonts/Tajawal-Medium.woff) format("woff");
     font-weight: 500;
+    font-style: "normal";
     font-display: swap;
-    src: url(https://fonts.gstatic.com/s/oswald/v36/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvgUE.ttf) format("truetype");
-}
-@font-face {
-    font-family: Roboto;
-    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: "Tajawal";
+    src: url(../fonts/Tajawal-Bold.eot);
+    src: url(../fonts/Tajawal-Bold.woff2) format("woff2"), url(../fonts/Tajawal-Bold.woff) format("woff");
+    font-weight: 700;
+    font-style: "normal";
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Tajawal";
+    src: url(../fonts/Tajawal-Black.eot);
+    src: url(../fonts/Tajawal-Black.woff2) format("woff2"), url(../fonts/Tajawal-Black.woff) format("woff");
     font-weight: 900;
+    font-style: "normal";
     font-display: swap;
-    src: url(https://fonts.gstatic.com/s/roboto/v27/KFOjCnqEu92Fr1Mu51TLBBc9.ttf) format("truetype");
-}
-@font-face {
-    font-family: Oswald;
-    font-style: normal;
-    font-weight: 700;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/oswald/v36/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZogUE.ttf) format("truetype");
-}
-@font-face {
-    font-family: "Roboto Condensed";
-    font-style: normal;
-    font-weight: 700;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/robotocondensed/v19/ieVi2ZhZI2eCN5jzbjEETS9weq8-32meKCM.ttf) format("truetype");
-}
-@font-face {
-    font-family: "Roboto Condensed";
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/robotocondensed/v19/ieVl2ZhZI2eCN5jzbjEETS9weq8-59U.ttf) format("truetype");
-}
-@font-face {
-    font-family: "Roboto Condensed";
-    font-style: italic;
-    font-weight: 400;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/robotocondensed/v19/ieVj2ZhZI2eCN5jzbjEETS9weq8-19e7CA.ttf) format("truetype");
-}
-@font-face {
-    font-family: Arimo;
-    font-style: normal;
-    font-weight: 700;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/arimo/v17/P5sfzZCDf9_T_3cV7NCUECyoxNk3CstsBw.ttf) format("truetype");
-}
-@font-face {
-    font-family: Arimo;
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/arimo/v17/P5sfzZCDf9_T_3cV7NCUECyoxNk37cxsBw.ttf) format("truetype");
-}
-@font-face {
-    font-family: "Bebas Neue";
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/bebasneue/v2/JTUSjIg69CK48gW7PXooxW4.ttf) format("truetype");
-}
-@font-face {
-    font-family: "Roboto Condensed";
-    font-style: normal;
-    font-weight: 300;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/robotocondensed/v19/ieVi2ZhZI2eCN5jzbjEETS9weq8-33mZKCM.ttf) format("truetype");
-} */
+  }
 body {
     margin: 0;
     font-size: 1rem;
@@ -489,7 +419,7 @@ body {
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
     line-height: normal;
-    font-family: Roboto, sans-serif;
+    font-family: "Tajawal", sans-serif;
     overflow-x: hidden;
     color: #333;
 }
@@ -2696,6 +2626,9 @@ header {
     }
 }
 @media (max-width: 567px) {
+    .intro-qr img {
+        max-width: 35vw;
+    } 
     .works-content__title span {
         text-align: center;
     }
