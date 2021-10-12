@@ -16,12 +16,12 @@
         <div class="qualify">
           <div class="qualify__title"><span class="rtl">HAIR RESCUE RX</span> </div>
           <div class="qualify__steps"><img src="static/images/general/qualify__steps.png" alt=""></div>
-          <form class="qualify-form intro-form" action="/"> 
+          <form class="qualify-form intro-form" id="first" action="order.html" novalidate> 
             <div class="qualify-form__item"> 
-              <input class="qualify-form__input name" type="text" data-name placeholder="الاسم الأول">
+              <input class="qualify-form__input name" type="text" required name="firstName" data-name placeholder="الاسم الأول">
             </div>
             <div class="qualify-form__item"> 
-              <input class="qualify-form__input email" type="text" data-mail placeholder="البريد الإلكتروني">
+              <input class="qualify-form__input email" type="text" required name="email" data-mail placeholder="البريد الإلكتروني">
             </div>
             <div class="qualify-form__foot">
               <button class="qualify-form__btn"><span class="rtl">تسجيل الدخول</span> </button>

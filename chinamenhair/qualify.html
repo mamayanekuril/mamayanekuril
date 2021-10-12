@@ -16,12 +16,12 @@
         <div class="qualify">
           <div class="qualify__title">HAIR RESCUE RX</div>
           <div class="qualify__steps"><img src="static/images/general/qualify__steps.png" alt=""></div>
-          <form class="qualify-form intro-form" action="/"> 
+          <form class="qualify-form intro-form" id="first" action="order.html" novalidate> 
             <div class="qualify-form__item"> 
-              <input class="qualify-form__input name" type="text" data-name placeholder="名字">
+              <input class="intro-form__item qualify-form__input name" type="text" required name="firstName" data-name placeholder="名字">
             </div>
             <div class="qualify-form__item"> 
-              <input class="qualify-form__input email" type="text" data-mail placeholder="电子邮箱">
+              <input class="intro-form__item qualify-form__input email" type="text" required name="email" data-mail placeholder="电子邮箱">
             </div>
             <div class="qualify-form__foot">
               <button class="qualify-form__btn">确认我的订单</button>
