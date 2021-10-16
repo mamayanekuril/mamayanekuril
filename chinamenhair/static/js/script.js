@@ -131,18 +131,22 @@ if (form) {
         
         if (name.value === '') {
             name.style.borderColor = 'red'
+            name.style.boxShadow = '0 0 0 0.1rem rgb(220 53 69 / 100%)'
         }
 
         if (mail.value === '') {
             mail.style.borderColor = 'red'
+            mail.style.boxShadow = '0 0 0 0.1rem rgb(220 53 69 / 100%)'
         }
 
         name.addEventListener('focusin', function() {
             name.style.borderColor = null
+            name.style.boxShadow = null
         })
 
         mail.addEventListener('focusin', function() {
             mail.style.borderColor = null
+            mail.style.boxShadow = null
         })
 
         
