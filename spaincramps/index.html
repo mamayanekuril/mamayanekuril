@@ -8,15 +8,14 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="format-detection" content="telephone=no">
-    <link rel="stylesheet" type="text/css" href="static/css/styles.css">
-    <link rel="preload" href="static/fonts/Roboto-Regular.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="static/fonts/Roboto-Bold.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="static/fonts/Roboto-Medium.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="static/fonts/Oswald-Regular.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="static/fonts/Oswald-Bold.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="static/fonts/RobotoCondensed-Regular.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="static/fonts/RobotoCondensed-Bold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="static/fonts/Roboto-Bold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="static/fonts/Roboto-Black.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="static/fonts/Roboto-Regular.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="static/images/general/intro-bg.jpg" as="image">
+    <link rel="stylesheet" type="text/css" href="static/css/styles.css">
   </head>
   <body>
     <div class="wrapper">
@@ -37,7 +36,10 @@
                   <div class="intro-content__list">
                     <div class="intro-content__list-img"> 
                       <picture>
-                        <source srcset="static/images/general/intro-img.webp" type="image/webp"><img src="static/images/general/intro-img.png" loading="lazy" width="716" height="716" alt="img">
+                        <source media="(max-width: 480px)" srcset="static/images/general/intro-img-m.webp" type="image/webp">
+                        <source media="(min-width: 481px)" srcset="static/images/general/intro-img.webp" type="image/webp">
+                        <source media="(max-width: 480px)" srcset="static/images/general/intro-img-m.png">
+                        <source media="(min-width: 481px)" srcset="static/images/general/intro-img.png"><img src="static/images/general/intro-img.png" loading="lazy" width="716" height="716" alt="img">
                       </picture>
                     </div>
                     <div class="intro-content__list-item"> 
@@ -141,7 +143,10 @@
                     <div class="suffer-card__inner"> 
                       <div class="suffer-card__photo"> 
                         <picture> 
-                          <source srcset="static/images/content/suffer-1.webp" type="image/webp"><img class="img1" src="static/images/content/suffer-1.png" loading="lazy" width="285" height="363" alt="img">
+                          <source media="(max-width: 480px)" srcset="static/images/content/suffer-1-m.webp" type="image/webp">
+                          <source media="(min-width: 481px)" srcset="static/images/content/suffer-1.webp" type="image/webp">
+                          <source media="(max-width: 480px)" srcset="static/images/content/suffer-1-m.jpg">
+                          <source media="(min-width: 481px)" srcset="static/images/content/suffer-1.jpg"><img src="static/images/content/suffer-1.jpg" loading="lazy" width="285" height="363" alt="img">
                         </picture>
                       </div>
                       <div class="suffer-card__txt">Calambres en la pantorrilla</div>
@@ -153,7 +158,10 @@
                     <div class="suffer-card__inner"> 
                       <div class="suffer-card__photo"> 
                         <picture> 
-                          <source srcset="static/images/content/suffer-2.webp" type="image/webp"><img class="img2" src="static/images/content/suffer-2.png" loading="lazy" width="285" height="363" alt="img">
+                          <source media="(max-width: 480px)" srcset="static/images/content/suffer-2-m.webp" type="image/webp">
+                          <source media="(min-width: 481px)" srcset="static/images/content/suffer-2.webp" type="image/webp">
+                          <source media="(max-width: 480px)" srcset="static/images/content/suffer-2-m.jpg">
+                          <source media="(min-width: 481px)" srcset="static/images/content/suffer-2.jpg"><img src="static/images/content/suffer-2.jpg" loading="lazy" width="285" height="363" alt="img">
                         </picture>
                       </div>
                       <div class="suffer-card__txt">Calambres en el pie</div>
@@ -165,7 +173,10 @@
                     <div class="suffer-card__inner"> 
                       <div class="suffer-card__photo"> 
                         <picture> 
-                          <source srcset="static/images/content/suffer-3.webp" type="image/webp"><img class="img3" src="static/images/content/suffer-3.png" loading="lazy" width="285" height="363" alt="img">
+                          <source media="(max-width: 480px)" srcset="static/images/content/suffer-3-m.webp" type="image/webp">
+                          <source media="(min-width: 481px)" srcset="static/images/content/suffer-3.webp" type="image/webp">
+                          <source media="(max-width: 480px)" srcset="static/images/content/suffer-3-m.jpg">
+                          <source media="(min-width: 481px)" srcset="static/images/content/suffer-3.jpg"><img src="static/images/content/suffer-3.jpg" loading="lazy" width="285" height="363" alt="img">
                         </picture>
                       </div>
                       <div class="suffer-card__txt">En cuello y espalda</div>
@@ -177,7 +188,10 @@
                     <div class="suffer-card__inner"> 
                       <div class="suffer-card__photo"> 
                         <picture> 
-                          <source srcset="static/images/content/suffer-4.webp" type="image/webp"><img class="img4" src="static/images/content/suffer-4.png" loading="lazy" width="285" height="363" alt="img">
+                          <source media="(max-width: 480px)" srcset="static/images/content/suffer-4-m.webp" type="image/webp">
+                          <source media="(min-width: 481px)" srcset="static/images/content/suffer-4.webp" type="image/webp">
+                          <source media="(max-width: 480px)" srcset="static/images/content/suffer-4-m.jpg">
+                          <source media="(min-width: 481px)" srcset="static/images/content/suffer-4.jpg"><img src="static/images/content/suffer-4.jpg" loading="lazy" width="285" height="363" alt="img">
                         </picture>
                       </div>
                       <div class="suffer-card__txt">Calambres en el muslo</div>
@@ -189,7 +203,10 @@
                     <div class="suffer-card__inner"> 
                       <div class="suffer-card__photo"> 
                         <picture> 
-                          <source srcset="static/images/content/suffer-5.webp" type="image/webp"><img class="img5" src="static/images/content/suffer-5.png" loading="lazy" width="285" height="363" alt="img">
+                          <source media="(max-width: 480px)" srcset="static/images/content/suffer-5-m.webp" type="image/webp">
+                          <source media="(min-width: 481px)" srcset="static/images/content/suffer-5.webp" type="image/webp">
+                          <source media="(max-width: 480px)" srcset="static/images/content/suffer-5-m.jpg">
+                          <source media="(min-width: 481px)" srcset="static/images/content/suffer-5.jpg"><img class="img5" src="static/images/content/suffer-5.jpg" loading="lazy" width="285" height="363" alt="img">
                         </picture>
                       </div>
                       <div class="suffer-card__txt">Isquiotibiales</div>
@@ -214,7 +231,10 @@
                 <div class="revolutional-content__subtitle">¡Por fin ha llegado el alivio más rápido y <br>efectivo para los calambres musculares!</div>
                 <div class="revolutional-image">
                   <picture>
-                    <source srcset="static/images/general/revolutional.webp" type="image/webp"><img src="static/images/general/revolutional.jpg" loading="lazy" width="1126" height="1035" alt="img">
+                    <source media="(max-width: 480px)" srcset="static/images/general/revolutional-m.webp" type="image/webp">
+                    <source media="(min-width: 481px)" srcset="static/images/general/revolutional.webp" type="image/webp">
+                    <source media="(max-width: 480px)" srcset="static/images/general/revolutional-m.jpg">
+                    <source media="(min-width: 481px)" srcset="static/images/general/revolutional.jpg"><img src="static/images/general/revolutional.jpg" loading="lazy" width="1126" height="1035" alt="img">
                   </picture>
                 </div>
                 <div class="revolutional-content__txt">
@@ -259,7 +279,10 @@
                 <div class="recomend-item">
                   <div class="recomend__img">
                     <picture> 
-                      <source srcset="static/images/general/fake-1.webp" type="image/webp"><img src="static/images/general/fake-1.png" width="715" height="372" loading="lazy" alt="img">
+                      <source media="(max-width: 480px)" srcset="static/images/general/fake-1-m.webp" type="image/webp">
+                      <source media="(min-width: 481px)" srcset="static/images/general/fake-1.webp" type="image/webp">
+                      <source media="(max-width: 480px)" srcset="static/images/general/fake-1-m.png">
+                      <source media="(min-width: 481px)" srcset="static/images/general/fake-1.png"><img src="static/images/general/fake-1.png" width="715" height="372" loading="lazy" alt="img">
                     </picture>
                     <div class="recomend__img-info">
                       <div class="recomend__img-name">T. Burman, Farmacéutica</div>
@@ -312,7 +335,10 @@
         <div class="formula">
           <div class="formula-image"> 
             <picture> 
-              <source srcset="static/images/general/formula.webp" type="image/webp"><img src="static/images/general/formula.jpg" loading="lazy" width="1920" height="1044" alt="img">
+              <source media="(max-width: 480px)" srcset="static/images/general/formula-m.webp" type="image/webp">
+              <source media="(min-width: 481px)" srcset="static/images/general/formula.webp" type="image/webp">
+              <source media="(max-width: 480px)" srcset="static/images/general/formula-m.jpg">
+              <source media="(min-width: 481px)" srcset="static/images/general/formula.jpg"><img src="static/images/general/formula.jpg" loading="lazy" width="1920" height="1044" alt="img">
             </picture>
           </div>
           <div class="formula-content">
