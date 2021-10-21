@@ -8,28 +8,19 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="format-detection" content="telephone=no">
-    <link rel="preload" href="static/images/general/intro-m.jpg" as="image">
-    <link rel="preload" href="static/images/general/intro-bg.jpg" as="image">
-    <link rel="preload" href="static/fonts/arimo/stylesheet.css" as="style">
+    <link rel="preload" href="static/images/general/intro-m.webp" as="image">
     <link rel="preload" href="static/fonts/oswald/stylesheet.css" as="style">
     <link rel="preload" href="static/fonts/roboto/stylesheet.css" as="style">
     <link rel="preload" href="static/fonts/robotoc/stylesheet.css" as="style">
-    <link rel="preload" href="static/fonts/BebasNeue-Regular.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="static/fonts/Arial-Black.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="static/fonts/Georgia-Italic.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="static/fonts/9201.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="static/fonts/roboto/Roboto-Black.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="static/fonts/oswald/Oswald-Medium.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="static/fonts/robotoc/RobotoCondensed-Bold.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="static/fonts/arimo/Arimo-Bold.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="static/fonts/oswald/Oswald-Bold.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="static/fonts/robotoc/RobotoCondensed-Light.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="static/fonts/robotoc/RobotoCondensed-Regular.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="static/fonts/robotoc/RobotoCondensed-Italic.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="static/fonts/arimo/Arimo-Regular.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="static/fonts/roboto/Roboto-Italic.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="static/fonts/roboto/Roboto-BlackItalic.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="static/fonts/arimo/Arimo-Italic.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="static/fonts/roboto/Roboto-Bold.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="static/fonts/roboto/Roboto-Regular.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="static/fonts/roboto/Roboto-Medium.woff2" as="font" crossorigin="anonymous">
@@ -119,7 +110,14 @@
           <div class="intro__bottom">
             <div class="intro-contain">
               <div class="intro-qr"> <img src="static/images/general/qr-code.gif" width="230" height="230" alt=""></div>
-              <div class="intro-contain__mobile"><img src="static/images/general/news-1.png" loading="lazy" width="377" height="46" alt=""></div>
+              <div class="intro-contain__mobile">
+                <picture> 
+                  <source media="(max-width: 480px)" srcset="static/images/general/news-1-m.webp" type="image/webp">
+                  <source media="(min-width: 481px)" srcset="static/images/general/news-1.webp" type="image/webp">
+                  <source media="(max-width: 480px)" srcset="static/images/general/news-1-m.png">
+                  <source media="(min-width: 481px)" srcset="static/images/general/news-1.png"><img src="static/images/general/news-1.png" loading="lazy" width="377" height="46" alt="">
+                </picture>
+              </div>
               <div class="intro-contain__left"> 
                 <div class="intro-contain__title">Does not contain:</div>
                 <div class="intro-contain__subtitle">GMO, gluten, dairy, or soy </div>
@@ -154,7 +152,10 @@
             <div class="proof__video">
               <div class="addVideo-wrapper">
                 <picture class="addVideo" data-video="1"> 
-                  <source srcset="static/images/content/1.webp" type="image/webp"><img src="static/images/content/1.jpg" loading="lazy" width="1752" height="987" alt="">
+                  <source media="(max-width: 480px)" srcset="static/images/content/1-m.webp" type="image/webp">
+                  <source media="(min-width: 481px)" srcset="static/images/content/1.webp" type="image/webp">
+                  <source media="(max-width: 480px)" srcset="static/images/content/1-m.jpg">
+                  <source media="(min-width: 481px)" srcset="static/images/content/1.jpg"><img src="static/images/content/1.jpg" loading="lazy" width="1752" height="987" alt="">
                 </picture>
               </div>
             </div>
@@ -190,7 +191,10 @@
                   <div class="choice-item__video">
                     <div class="addVideo-wrapper">
                       <picture class="addVideo" data-video="doc1"> 
-                        <source srcset="static/images/content/c-1.webp" type="image/webp"><img src="static/images/content/c-1.jpg" width="1004" height="565" alt="">
+                        <source media="(max-width: 480px)" srcset="static/images/content/c-1-m.webp" type="image/webp">
+                        <source media="(min-width: 481px)" srcset="static/images/content/c-1.webp" type="image/webp">
+                        <source media="(max-width: 480px)" srcset="static/images/content/c-1-m.jpg">
+                        <source media="(min-width: 481px)" srcset="static/images/content/c-1.jpg"><img src="static/images/content/c-1.jpg" loading="lazy" width="1004" height="565" alt="">
                       </picture>
                     </div>
                   </div>
@@ -203,12 +207,15 @@
                   <div class="choice-item__video"> 
                     <div class="addVideo-wrapper">
                       <picture class="addVideo" data-video="doc2"> 
-                        <source srcset="static/images/content/c-2.webp" type="image/webp"><img src="static/images/content/c-2.jpg" width="1004" height="565" alt="">
+                        <source media="(max-width: 480px)" srcset="static/images/content/c-2-m.webp" type="image/webp">
+                        <source media="(min-width: 481px)" srcset="static/images/content/c-2.webp" type="image/webp">
+                        <source media="(max-width: 480px)" srcset="static/images/content/c-2-m.jpg">
+                        <source media="(min-width: 481px)" srcset="static/images/content/c-2.jpg"><img src="static/images/content/c-2.jpg" loading="lazy" width="1004" height="565" alt="">
                       </picture>
                     </div>
                   </div>
                   <div class="choice-item__name">Dr. A. Carmack, MD</div>
-                  <div class="choice-item__position">Medical Doctor, USA</div>
+                  <div class="choice-item__position">Medical Doctor, USA </div>
                 </div>
               </div>
             </div>
@@ -221,11 +228,14 @@
             <div class="recomend__video"> 
               <div class="addVideo-wrapper">
                 <picture class="addVideo" data-video="recomend"> 
-                  <source srcset="static/images/content/recomend.webp" type="image/webp"><img src="static/images/content/recomend.jpg" width="1792" height="1006" alt="img">
+                  <source media="(max-width: 480px)" srcset="static/images/content/recomend-m.webp" type="image/webp">
+                  <source media="(min-width: 481px)" srcset="static/images/content/recomend.webp" type="image/webp">
+                  <source media="(max-width: 480px)" srcset="static/images/content/recomend-m.jpg">
+                  <source media="(min-width: 481px)" srcset="static/images/content/recomend.jpg"><img src="static/images/content/recomend.jpg" loading="lazy" width="1792" height="1006" alt="img">
                 </picture>
               </div>
             </div>
-            <div class="recomend__link"> <a class="recomend__link-order btn" href="#">RUSH MY ORDER</a></div>
+            <div class="recomend__link"> <a class="recomend__link-order btn" href="#">RUSH MY ORDER </a></div>
           </div>
         </div>
         <div class="works">
