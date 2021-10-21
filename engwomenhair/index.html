@@ -8,19 +8,13 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="format-detection" content="telephone=no">
-    <link rel="preload" href="static/images/general/intro-m.jpg" as="image">
-    <link rel="preload" href="static/images/general/intro-bg.jpg" as="image">
+    <link rel="preload" href="static/images/general/intro-m.webp" as="image">
+    <link rel="preload" href="static/images/general/intro-bg.webp" as="image">
     <link rel="preload" href="static/fonts/RobotoCondensed-Regular.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="static/fonts/Oswald-Bold.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="static/fonts/Arimo-Regular.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="static/fonts/Roboto-Black.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="static/fonts/Roboto-Medium.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="static/fonts/RobotoCondensed-Bold.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="static/fonts/Arimo-BoldItalic.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="static/fonts/Oswald-Medium.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="static/fonts/Oswald-Regular.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="static/fonts/Roboto-Bold.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="static/fonts/BebasNeue-Regular.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="static/fonts/Roboto-Regular.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="static/css/styles.css">
   </head>
@@ -41,7 +35,7 @@
                   <div class="intro-content__title-1">Hair Growth</div>
                   <div class="intro-content__title-2">Booster</div>
                   <div class="intro-content__txt">NATURAL & EFFECTIVE </div>
-                  <div class="intro-content__list">
+                  <div class="intro-content__list"> 
                     <div class="intro-content__list-img"> 
                       <picture class="desctop"> 
                         <source srcset="static/images/general/intro-img.webp" type="image/webp"><img src="static/images/general/intro-img.png" width="386" height="634" alt="img">
@@ -108,7 +102,14 @@
           <div class="intro__bottom">
             <div class="intro-contain">
               <div class="intro-qr"> <img src="static/images/general/qr-code.gif" loading="lazy" width="230" height="230" alt=""></div>
-              <div class="intro-contain__mobile"><img src="static/images/general/news-1.png" loading="lazy" width="367" height="45" alt=""></div>
+              <div class="intro-contain__mobile">
+                <picture> 
+                  <source media="(max-width: 480px)" srcset="static/images/general/news-1-m.webp" type="image/webp">
+                  <source media="(min-width: 481px)" srcset="static/images/general/news-1.webp" type="image/webp">
+                  <source media="(max-width: 480px)" srcset="static/images/general/news-1-m.png">
+                  <source media="(min-width: 481px)" srcset="static/images/general/news-1.png"><img src="static/images/general/news-1.png" loading="lazy" width="377" height="46" alt="">
+                </picture>
+              </div>
               <div class="intro-contain__left"> 
                 <div class="intro-contain__title">Does not contain:</div>
                 <div class="intro-contain__subtitle">GMO, gluten, dairy, or soy </div>
@@ -143,7 +144,10 @@
             <div class="proof__video">
               <div class="addVideo-wrapper">
                 <picture class="addVideo" data-video="1"> 
-                  <source srcset="static/images/content/1.webp" type="image/webp"><img src="static/images/content/1.jpg" loading="lazy" width="1752" height="987" alt="">
+                  <source media="(max-width: 480px)" srcset="static/images/content/1-m.webp" type="image/webp">
+                  <source media="(min-width: 481px)" srcset="static/images/content/1.webp" type="image/webp">
+                  <source media="(max-width: 480px)" srcset="static/images/content/1-m.jpg">
+                  <source media="(min-width: 481px)" srcset="static/images/content/1.jpg"><img src="static/images/content/1.jpg" loading="lazy" width="1752" height="987" alt="">
                 </picture>
               </div>
             </div>
@@ -182,7 +186,10 @@
                   <div class="choice-item__video">
                     <div class="addVideo-wrapper">
                       <picture class="addVideo" data-video="doc1"> 
-                        <source srcset="static/images/content/c-1.webp" type="image/webp"><img src="static/images/content/c-1.jpg" loading="lazy" width="1004" height="565" alt="">
+                        <source media="(max-width: 480px)" srcset="static/images/content/c-1-m.webp" type="image/webp">
+                        <source media="(min-width: 481px)" srcset="static/images/content/c-1.webp" type="image/webp">
+                        <source media="(max-width: 480px)" srcset="static/images/content/c-1-m.jpg">
+                        <source media="(min-width: 481px)" srcset="static/images/content/c-1.jpg"><img src="static/images/content/c-1.jpg" loading="lazy" width="1004" height="565" alt="">
                       </picture>
                     </div>
                   </div>
@@ -195,7 +202,10 @@
                   <div class="choice-item__video"> 
                     <div class="addVideo-wrapper">
                       <picture class="addVideo" data-video="doc2"> 
-                        <source srcset="static/images/content/c-2.webp" type="image/webp"><img src="static/images/content/c-2.jpg" loading="lazy" width="1004" height="565" alt="">
+                        <source media="(max-width: 480px)" srcset="static/images/content/c-2-m.webp" type="image/webp">
+                        <source media="(min-width: 481px)" srcset="static/images/content/c-2.webp" type="image/webp">
+                        <source media="(max-width: 480px)" srcset="static/images/content/c-2-m.jpg">
+                        <source media="(min-width: 481px)" srcset="static/images/content/c-2.jpg"><img src="static/images/content/c-2.jpg" loading="lazy" width="1004" height="565" alt="">
                       </picture>
                     </div>
                   </div>
@@ -213,7 +223,10 @@
             <div class="recomend__video">
               <div class="addVideo-wrapper">
                 <picture class="addVideo" data-video="recomend"> 
-                  <source srcset="static/images/content/recomend.webp" type="image/webp"><img src="static/images/content/recomend.jpg" loading="lazy" width="1792" height="1006" alt="img">
+                  <source media="(max-width: 480px)" srcset="static/images/content/recomend-m.webp" type="image/webp">
+                  <source media="(min-width: 481px)" srcset="static/images/content/recomend.webp" type="image/webp">
+                  <source media="(max-width: 480px)" srcset="static/images/content/recomend-m.jpg">
+                  <source media="(min-width: 481px)" srcset="static/images/content/recomend.jpg"><img src="static/images/content/recomend.jpg" loading="lazy" width="1792" height="1006" alt="img">
                 </picture>
               </div>
             </div>
