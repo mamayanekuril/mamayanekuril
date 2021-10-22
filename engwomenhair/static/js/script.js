@@ -170,7 +170,7 @@ var INPUTS_EL = document.querySelectorAll('form  .intro-form__item');
 var API_TOKEN = 'mtbp56YSdFxwOZBR5tMf-LAvKyxtRb1JNKu-RvBidKm_bB0F63thfw7TlUBQR560G-k';
 var EMAIL = 'info@biolabrx.com';
 var API_URL = 'https://www.universal-tutorial.com/api/';
-var JSON_URL = 'price.json';
+var JSON_URL = './static/js/json/price.json';
 
 var forms = function () {
     var dataTable = null;
