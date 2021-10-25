@@ -65,7 +65,7 @@ function order() {
 
     function output() {
       sp.textContent = `$${shiping}`
-      save.textContent = ` 您保存 $${sale}`
+      save.textContent = ` 您节省了 $${sale}`
       retail.textContent = `零售： ${retailText}`
 
       yt.textContent = `$${(price + shiping).toFixed(2)}`
@@ -106,10 +106,11 @@ function orderForm() {
       if (!item.value) {
         e.preventDefault()
         item.style.borderColor = 'red'
-
+        item.style.boxShadow = '0 0 0 0.1rem rgb(220 53 69 / 100%)'
 
         item.addEventListener('focusin', function() {
           item.style.borderColor = null
+          item.style.boxShadow = null
         })
       }
     })
