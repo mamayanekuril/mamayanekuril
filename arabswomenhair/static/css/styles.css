@@ -1391,13 +1391,13 @@ a[class] {
     z-index: 1;
     right: -7vw;
     overflow: hidden;
+    width: 55vw;
 }
 .fight-content__img img {
-    max-width: 55vw;
     height: 104%;
     margin-left: auto;
     transform: rotate(5deg);
-    /* width: auto; */
+    width: auto;
 }
 .fight-content__title {
     font-weight: 700;
@@ -3325,6 +3325,7 @@ header {
         margin-left: 0;
         margin-top: -32.67vw;
         padding: 0;
+        width: initial;
     }
     .fight-content__img img {
         max-width: 100%;
