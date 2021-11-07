@@ -1445,9 +1445,10 @@ a[class] {
   z-index: 1;
   right: 0;
   overflow: hidden;
+  max-width: 43vw;
 }
 .fight-content__img img {
-  max-width: 43vw;
+  width: auto;
   height: 120%;
   transform: scale(-1, 1);
 }
@@ -3386,6 +3387,7 @@ header {
       margin-top: -50vw;
       padding: 0;
       overflow: initial;
+      max-width: initial;  
   }
   .fight-content__img img {
       max-width: 100%;
