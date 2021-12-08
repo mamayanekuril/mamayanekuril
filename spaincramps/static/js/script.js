@@ -88,7 +88,7 @@ function order() {
         save.textContent = `Ahorras $${sale}`
         retail.textContent = `Al por menor: $${retailText}`
 
-        yt.textContent = `$${(price + shiping).toFixed(2)}`
+        yt.textContent = `$${(price)}`
     }
 
     if (!select) return

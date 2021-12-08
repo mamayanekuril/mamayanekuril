@@ -86,9 +86,9 @@ function order() {
     function output() {
       sp.textContent = `$${shiping}`
       save.textContent = `قمت بتوفير ${sale}$`
-      retail.textContent = `مصاريف التجزئة:  ${price}$`
+      retail.textContent = `مصاريف التجزئة:  ${retailText}$`
 
-      yt.textContent = `$${(price + shiping).toFixed(2)}`
+      yt.textContent = `$${(price)}`
   }
 
     if (!select) return
