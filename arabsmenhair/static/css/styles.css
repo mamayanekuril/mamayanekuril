@@ -2496,7 +2496,7 @@ header {
   }
   .order-item__head-left {
       width: 320px;
-      font-size: 18px;
+      font-size: 14px;
       line-height: 22px;
   }
   .order-item__head-right {
@@ -2574,7 +2574,7 @@ header {
   }
   .order-item__normaly-txt,
   .order-item__normaly-value {
-      font-size: 28px;
+      font-size: 20px;
       line-height: 42px;
   }
   .order-content__icons-item:nth-child(1) {

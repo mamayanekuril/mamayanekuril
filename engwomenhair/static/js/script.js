@@ -48,72 +48,97 @@ modal.forEach(item => {
 
 
 function order() {
-    const orderItem = document.querySelectorAll('.order-item')
-    if (!orderItem.length) return
-    let price = 0
-    let sale = 0
-    let shiping = 0
-    let total = 0
+  const orderItem = document.querySelectorAll('.order-item')
+  if (!orderItem.length) return
+  let price = 0
+  let sale = 0
+  let shiping = 0
+  let total = 0
+  let retailText = ''
 
-    const item1 = document.querySelector('.item1')
-    const item2 = document.querySelector('.item2')
-    const item3 = document.querySelector('.item3')
+  const item1 = document.querySelector('.item1')
+  const item2 = document.querySelector('.item2')
+  const item3 = document.querySelector('.item3')
 
-    const sp = document.getElementById('shiping')
-    const yt = document.getElementById('total')
-    const save = document.getElementById('save')
-    const retail = document.getElementById('retail')
+  const sp = document.getElementById('shiping')
+  const yt = document.getElementById('total')
+  const save = document.getElementById('save')
+  const retail = document.getElementById('retail')
 
-    const select = document.querySelector('#country')
+  const select = document.querySelector('#country')
 
-    orderItem.forEach(item => {
-        item.addEventListener('click', function() {
-            orderItem.forEach(i => i.classList.remove('selected'))
-            this.classList.add('selected')
+  orderItem.forEach(item => {
+      item.addEventListener('click', function() {
+          orderItem.forEach(i => i.classList.remove('selected'))
+          this.classList.add('selected')
 
-            price = Number(this.dataset.price)
-            sale = Number(this.dataset.sale)
-            
-            let event = new Event("change");
-            select.dispatchEvent(event);
+          price = Number(this.dataset.price)
+          sale = Number(this.dataset.sale)
+          
+          retailText = this.dataset.retail
+          let event = new Event("change");
+          select.dispatchEvent(event);
 
-            output()
-        })
-    })
+          output()
+      })
+  })
 
 
-    function output() {
-        sp.textContent = `$${shiping}`
-        save.textContent = `You Save $${sale}`
-        retail.textContent = `Retail: $${price}`
+  function output() {
+      sp.textContent = `$${shiping}`
+      save.textContent = `You Save $${sale}`
+      retail.textContent = `Retail: ${retailText}`
 
-        yt.textContent = `$${(price + shiping - sale).toFixed(2)}`
-    }
+      yt.textContent = `$${price}`
+  }
 
-    if (!select) return
+  if (!select) return
 
-    select.addEventListener('change', function() {
-        let value1 = this.querySelector(':checked').getAttribute('data-price1')
-        let value2 = this.querySelector(':checked').getAttribute('data-price2')
-        let value3 = this.querySelector(':checked').getAttribute('data-price3')
+  select.addEventListener('change', function() {
+      let value1 = this.querySelector(':checked').getAttribute('data-price1')
+      let value2 = this.querySelector(':checked').getAttribute('data-price2')
+      let value3 = this.querySelector(':checked').getAttribute('data-price3')
 
-        if (item1.classList.contains('selected') && item1) {
-            shiping = Number(value1)
-        } else if (item2.classList.contains('selected') && item2) {
-            shiping = Number(value2)
-        } else if (item3.classList.contains('selected') && item3) {
-            shiping = Number(value3)
-        } else {
-            shiping = 0
-        }
+      if (item1.classList.contains('selected') && item1) {
+          shiping = Number(value1)
+      } else if (item2.classList.contains('selected') && item2) {
+          shiping = Number(value2)
+      } else if (item3.classList.contains('selected') && item3) {
+          shiping = Number(value3)
+      } else {
+          shiping = 0
+      }
 
-        // console.log(shiping)
+      // console.log(shiping)
 
-        output()
-    })
+      output()
+  })
 }
 
 order()
+
+function orderForm() {
+  const form = document.getElementById('form')
+  if (!form) return
+  form.addEventListener('submit', function(e) {
+    const items = form.querySelectorAll('.intro-form__item')
+
+    items.forEach(item => {
+      if (!item.value) {
+        e.preventDefault()
+        item.style.borderColor = 'red'
+        item.style.boxShadow = '0 0 0 0.1rem rgb(220 53 69 / 100%)'
+
+        item.addEventListener('focusin', function() {
+          item.style.borderColor = null
+          item.style.boxShadow = null
+        })
+      }
+    })
+  })
+}
+
+orderForm()
 
 const form = document.querySelector('.intro-form')
 
@@ -170,7 +195,7 @@ var INPUTS_EL = document.querySelectorAll('form  .intro-form__item');
 var API_TOKEN = 'mtbp56YSdFxwOZBR5tMf-LAvKyxtRb1JNKu-RvBidKm_bB0F63thfw7TlUBQR560G-k';
 var EMAIL = 'info@biolabrx.com';
 var API_URL = 'https://www.universal-tutorial.com/api/';
-var JSON_URL = './static/js/json/price.json';
+var JSON_URL = 'price.json';
 
 var forms = function () {
     var dataTable = null;

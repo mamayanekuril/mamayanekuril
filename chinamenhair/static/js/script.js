@@ -88,7 +88,7 @@ function order() {
       save.textContent = ` 您节省了 $${sale}`
       retail.textContent = `零售： ${retailText}`
 
-      yt.textContent = `$${(price + shiping).toFixed(2)}`
+      yt.textContent = `$${(price)}`
   }
 
     if (!select) return
