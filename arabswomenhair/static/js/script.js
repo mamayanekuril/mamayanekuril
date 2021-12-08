@@ -88,7 +88,7 @@ function order() {
         save.textContent = `ستوفر $${sale}`
         retail.textContent = `المبلغ قبل الخصم:  ${retailText}`
 
-        yt.textContent = `$${(price + shiping).toFixed(2)}`
+        yt.textContent = `$${(price)}`
     }
 
     if (!select) return
@@ -115,6 +115,29 @@ function order() {
 }
 
 order()
+
+function orderForm() {
+  const form = document.getElementById('form')
+  if (!form) return
+  form.addEventListener('submit', function(e) {
+    const items = form.querySelectorAll('.intro-form__item')
+
+    items.forEach(item => {
+      if (!item.value) {
+        e.preventDefault()
+        item.style.borderColor = 'red'
+        item.style.boxShadow = '0 0 0 0.1rem rgb(220 53 69 / 100%)'
+
+        item.addEventListener('focusin', function() {
+          item.style.borderColor = null
+          item.style.boxShadow = null
+        })
+      }
+    })
+  })
+}
+
+orderForm()
 
 const form = document.querySelector('.intro-form')
 
