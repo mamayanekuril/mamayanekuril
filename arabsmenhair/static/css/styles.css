@@ -1,6 +1,9 @@
 * {
   font-family: Tajawal, sans-serif;
 }
+#paypal-button-container {
+  transform: scale(-1, 1);
+}
 .right {
   direction: rtl;
   transform: scale(1, 1);
